@@ -217,7 +217,8 @@
         $("#gzclogInButton").click(function () {
             var gzxUserName = $(".gzxUserName").val();
             var gzxPassword = $(".gzxPassword").val();
-            if ($('#selectId2').val() == "" || $('#selectId').val() == "") {
+            console.log($('#selectId2').val())
+            if ($('#selectId2').val() == "cs" || $('#selectId').val() == "cs") {
                 alert("公证处或业务不能为空!请重新输入")
 
             }
@@ -257,9 +258,10 @@
                 });
                 //建行登录
             } else if ($('#selectId').val() == "zx" && $('#selectId2').val() == "jh") {
+              console.log("建行登录")
                 $.ajax({
                     type: 'get',
-                    url: 'http://fqtest.deepsec.cn:9011/zxoeens_g/uniteLogin.htm',
+                    url: 'http://fqtest.deepsec.cn:10201/zxoeens_n/uniteLogin.htm',
                     // async: true,
                     data: {
                         username: gzxUserName,
@@ -268,7 +270,7 @@
                     success: function (data) {
                         console.log(data)
                         if(data.data.user_token){
-                            // window.open( window.open("http://fqtest.deepsec.cn:9011/zxoeens_g/#/login"+"?user_token"+data.data.user_token))
+                            window.open( window.open("http://fqtest.deepsec.cn:10201/zxoeens_n/#/login"+"?user_token"+data.data.user_token))
                         }
 
                     },
