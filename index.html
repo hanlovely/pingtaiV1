@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网络赋强平台</title>
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/js/swiper.min.css">
+</head>
+<style>
+    .swiper-pagination{
+        position:absolute;
+        top:0;
+        left:0;
+        height: 744px;
+        width: 2px;
+        background: #ffffff;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet{
+        height: 372px;
+        border-radius: 0;
+        width: 2px;
+        background: #FFFFFF 20%;
+    }
+    .swiper-pagination-clickable .swiper-pagination-bullet-active{
+        height: 372px;
+        width: 2px;
+        border-radius: 0;
+        background:rgba(227,68,53,1);
+    }
+</style>
+<body>
+<div class="main">
+    <div class="headers">
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <div class="headers_logo">
+
+                        </div>
+                        <div class="headers_text_s">
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <div class="headers_text">
+                            深安链
+                        </div>
+                        <div class="headers_text2">
+                            Deepchain
+                        </div>
+                        <div class="headers_text3">
+                            01.
+                        </div>
+                    </a>
+                    <dl>
+                        <dd>
+                            <a href="deepchain/deepchain.html">
+                                <div class="headers_text">
+                                    深安链
+                                </div>
+                                <div class="headers_text2">
+                                    Deepchain
+                                </div>
+                                <div class="headers_text3">
+                                    01.
+                                </div>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="deepchain/browser.html">
+                                <div class="headers_text">
+                                    深安链浏览器
+                                </div>
+                                <div class="headers_text2">
+                                    Deepchain browser
+                                </div>
+                                <div class="headers_text3">
+                                    01.
+                                </div>
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="solution/solution.html">
+                        <div class="headers_text">
+                            解决方案
+                        </div>
+                        <div class="headers_text2">
+                            The solution
+                        </div>
+                        <div class="headers_text3">
+                            02.
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                        <div class="headers_text">
+                            政策导读
+                        </div>
+                        <div class="headers_text2">
+                            Policy guide
+                        </div>
+                        <div class="headers_text3">
+                            03.
+                        </div>
+                    </a>
+                    <dl>
+                        <dd>
+                            <a href="news/policyList.html">
+                                <div class="headers_text">
+                                    政策导读
+                                </div>
+                                <div class="headers_text2">
+                                    Policy guide
+                                </div>
+                                <div class="headers_text3">
+                                    03.
+                                </div>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="news/indexNews.html">
+                                <div class="headers_text">
+                                    新闻资讯
+                                </div>
+                                <div class="headers_text2">
+                                    News andinformation
+                                </div>
+                                <div class="headers_text3">
+                                    03.
+                                </div>
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="about.html">
+                        <div class="headers_text">
+                            关于我们
+                        </div>
+                        <div class="headers_text2">
+                            About us
+                        </div>
+                        <div class="headers_text3">
+                            04.
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="inspection.html">
+                        <div class="headers_text">
+                            公证书查验
+                        </div>
+                        <div class="headers_text2">
+                            Notarial examination
+                        </div>
+                        <div class="headers_text3">
+                            05.
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav_logon"><a href="login.html" style="color: #FFFFFF">登录</a></div>
+        </nav>
+    </div>
+    <div class="main_box" id='main_box'>
+        <div class="box_banner">
+            <div class="box_banner_title">
+                网络赋强公证平台
+            </div>
+            <div class="box_banner_text">
+                解决科技金融、公证
+            </div>
+            <div class="box_banner_bottom">
+                <div class="banner_bottom_left">
+                    <ul>
+                        <li>
+                            <div class="li_number branchCount">
+
+                            </div>
+                            <div class="li_title">
+                                对接金融机构
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li_number">
+                                2
+                            </div>
+                            <div class="li_title">
+                                对接公证处
+                            </div>
+                        </li>
+                        <li>
+                            <div class="li_number">
+                                5
+                            </div>
+                            <div class="li_title">
+                                业务种类
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="banner_bottom_right">
+                    <div class="bbr_top">
+
+                    </div>
+                    <div class="bbr_bottom">
+                        <div class="bbr_bottom_t">
+                            业务相关数据
+                        </div>
+                        <div class="bbr_bottom_b">
+                            <div class="bbr_bottom_b_l">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="carouselBox">
+        <div class="carousel">
+            <div class="swiper-container banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="li_top">
+                            <div class="li_top_l">
+                                <div class="li_top_title success_count">
+
+                                </div>
+                                <div class="li_top_text">
+                                    公证申请数
+                                </div>
+                            </div>
+                            <div class="li_top_r">
+                                <div class="li_top_title success_count2">
+
+                                </div>
+                                <div class="li_top_text">
+                                    执行申请数
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li_bottom">
+                            <div class="li_top_l">
+                                <div class="li_top_title success_money">
+
+                                </div>
+                                <div class="li_top_text">
+                                    公证总金额
+                                </div>
+                            </div>
+                            <div class="li_top_r">
+                                <div class="li_top_title success_money2">
+
+                                </div>
+                                <div class="li_top_text">
+                                    执行总金额
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide swiper-slide2">
+                        <div class="li_top">
+                            <div class="li_top_l">
+                                <div class="li_top_title creditRepaymentRate">
+
+                                </div>
+                                <div class="li_top_text">
+                                    信贷业务还款率
+                                </div>
+                            </div>
+                            <div class="li_top_r">
+                                <div class="li_top_title increaseRate">
+
+                                </div>
+                                <div class="li_top_text">
+                                    公证业务增长率
+                                </div>
+                            </div>
+                        </div>
+                        <div class="li_bottom">
+                            <div class="li_top_l">
+                                <div class="li_top_title exigentRepaymentRate">
+
+                                </div>
+                                <div class="li_top_text">
+                                    催告还款率
+                                </div>
+                            </div>
+                            <div class="li_top_r">
+                                <div class="li_top_title courtCaseRate">
+
+                                </div>
+                                <div class="li_top_text">
+                                    法院立案执行率
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination">
+
+            </div>
+        </div>
+    </div>
+    <div class="terraceBox">
+        <div class="terrace">
+            <div class="terrace_top">
+                <div class="terrace_top_border">
+
+                </div>
+            </div>
+            <div class="terrace_logo">
+
+            </div>
+            <div class="terrace_title">
+                银行接入网络赋强平台
+            </div>
+            <div class="terrace_text">
+                网络赋强平台已接入覆盖全国的公证处网络，金融机构可快速对接公证处， 业界唯一多种金融产品网络赋强落地方案，降低放贷风险，有效降低逾期率
+            </div>
+            <div class="terrace_title2">
+                已接入银行
+            </div>
+            <ul class="terrace_ul">
+                <li>
+                    <img src="assets/img/platform1.png">
+                </li>
+                <li>
+                    <img src="assets/img/platform2.png">
+                </li>
+                <li>
+                    <img src="assets/img/platform3.png">
+                </li>
+                <li>
+                    <img src="assets/img/platform4.png">
+                </li>
+                <li>
+                    <img src="assets/img/platform5.png">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="terraceBoxGzc">
+        <div class="terrace">
+            <div class="terrace_top">
+                <div class="terrace_top_border">
+
+                </div>
+            </div>
+            <div class="terrace_logo_fy">
+
+            </div>
+            <div class="terrace_title">
+                公证处接入网络赋强平台
+            </div>
+            <div class="terrace_text">
+                通过网络赋强平台，公证处可快速找到银行，开拓新业务辅助原有线下公证业务模式，有效提升多种金融
+                业务公证效率
+            </div>
+            <div class="terrace_title2">
+                已接入公证处
+            </div>
+            <ul class="terrace_ul">
+                <li>
+                    <img src="assets/img/notaryOffice1.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice2.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice3.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice4.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice5.png">
+                </li>
+            </ul>
+            <ul class="terrace_ul">
+                <li>
+                    <img src="assets/img/notaryOffice6.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice7.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice8.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice9.png">
+                </li>
+                <li>
+                    <img src="assets/img/notaryOffice10.png">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="terraceBoxFc">
+        <div class="terrace">
+            <div class="terrace_top">
+                <div class="terrace_top_border">
+
+                </div>
+            </div>
+            <div class="terrace_logo_gzc">
+
+            </div>
+            <div class="terrace_title">
+                法院接入网络赋强平台
+            </div>
+            <div class="terrace_text">
+                通过与法院业务系统对接，实现快速批量立案，提升司法效率突破地域限制，有效解决执行难问题
+            </div>
+            <div class="terrace_title2">
+                已接入法院
+            </div>
+            <ul class="terrace_ul">
+                <li style="margin-left: 466px">
+                    <img src="assets/img/court.png">
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <!--=========================footer区域===============================-->
+    <div class="footer">
+        <div class="footers">
+            <div class="footerLeft">
+                <div class="footerLeft_logo">
+
+                </div>
+                <div class="footerLeft_code">
+
+                </div>
+                <div class="footerLeft_title">
+                    版权所有 © 沈安未来科技有限公司 2019 保留一切权利 京ICP备19005678号-1
+                </div>
+            </div>
+            <div class="footerRight">
+                <ul class="footerRight_ul">
+                    <li>
+                        持续创新的“区块链公证+”智能公证服务平台第一品牌
+                    </li>
+                    <li>
+                        400-690-601
+                    </li>
+                    <li>
+                        <a href="about.html">联系我们</a>
+                    </li>
+                </ul>
+                <ul class="footerRight_nav">
+                    <li>
+                        <a href="index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="deepchain/deepchain.html">深安链</a>
+                    </li>
+                    <li>
+                        <a href="solution/solution.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="news/policyList.html">政策导读</a>
+                    </li>
+                    <li>
+                        <a href="about.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="inspection.html">公证书查验</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="./assets/js/jquery-1.8.3.min.js"></script>
+<script src="./cfg/SawlCfg.js"></script>
+<script src="./assets/js/swiper.min.js"></script>
+
+<script>
+
+    var platform = SawlCfg.platform[edition];
+    $(function () {
+        //轮播数据
+        $.ajax({
+            type: 'get',
+            url: platform + '/platform/sumnotarization/index',
+            async: true,
+            success: function (data) {
+                var data = data.data;
+                //公证申请数量
+                $(".success_count").html(format(data.notarCounts.success_count));
+                //公证总金额
+                $(".success_money").html(format(data.notarCounts.success_money));
+                //执行申请数量
+                $(".success_count2").html(format(data.executCounts.success_count));
+                //执行总金额
+                $(".success_money2").html(format(data.executCounts.success_money));
+                //法院立案执行率
+                $(".courtCaseRate").html((data.courtCaseRate)*100 +"%");
+                //催告还款率
+                $(".exigentRepaymentRate").html((data.exigentRepaymentRate)*100 +"%");
+                //信贷业务还款率
+                $(".creditRepaymentRate").html((data.creditRepaymentRate)*100 +"%");
+                //业务增长率
+                $(".increaseRate").html((data.increaseRate)*100 +"%");
+
+            },
+            error: function (error) {
+                alert(error.message)
+            }
+        });
+        //headers滚动事件
+        $(".main").on('scroll', function(e) {
+            if ($(".main").scrollTop() > 146) {
+                $(".headers").css("background","rgba(0,0,0,0.8)");
+                $(".headers nav ul li dl").css("background","rgba(0,0,0,0.8)");
+
+            } else if($(".main").scrollTop() <=1){
+                $(".headers").css("background","none");
+                $(".headers nav ul li dl").css("background","none");
+            }
+        });
+        var mySwiper = new Swiper('.banner', {
+            direction: 'vertical',
+            loop: true,
+            autoplay: 4000,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            preventClicks: false,
+            noSwiping: true,
+            //effect: 'flip',
+        });
+        $(".banner").on({
+            mouseover : function(){
+                //划入鼠标暂停
+                mySwiper.stopAutoplay()
+            } ,
+            mouseout : function(){
+                //划出鼠标开始轮播
+                mySwiper.startAutoplay()
+            }
+        }) ;
+        //对接金融机构
+        $.ajax({
+            type: 'get',
+            url: platform + '/platform/sumbank/info',
+            async: true,
+            success: function (data) {
+                $(".branchCount").html(data.data.branchCount);
+            },
+            error: function (error) {
+                alert(error.message)
+            }
+        });
+
+    });
+
+    //千分位
+    function format (num) {
+        return (num+ '').replace(/(\d{1,3})(?=(\d{3})+(?:$|\.))/g,'$1,');
+    }
+    // 时间戳转换时间格式
+    function timestampToTime(timestamp) {
+        var date = new Date(timestamp);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        var Y = date.getFullYear() + '-';
+        var M = (date.getMonth() + 1 < 10 ? '0' + (date.getMonth() + 1) : date.getMonth() + 1) + '-';
+        var D = date.getDate() + ' ';
+        var h = date.getHours() + ':';
+        var m = date.getMinutes() + ':';
+        var s = date.getSeconds();
+        return Y + M + D;
+    }
+</script>
+
+</html>
+
