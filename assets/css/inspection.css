@@ -1,0 +1,444 @@
+/*===================================banner区域===============================*/
+/*banner区域*/
+.main_box {
+
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/inspection_banner.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+@media only screen and (min-width: 1680px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+.box_banner {
+    height: 645px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 435px;
+
+}
+
+
+.box_banner .box_banner_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.box_banner .box_banner_text {
+    width: 100%;
+    height: 239px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #E7172D;
+}
+
+.box_banner .box_banner_bottom {
+    width: 100%;
+    height: 280px;
+}
+
+.box_banner_bottom .banner_bottom_left {
+    height: 280px;
+    width: 900px;
+    background: url(../img/inspection_banner_bottom_left.png) no-repeat;
+    padding: 0 50px;
+}
+
+.banner_bottom_left p {
+    min-height: 99px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 33px;
+    padding: 75px 45px;
+}
+
+.banner_bottom_left, .banner_bottom_right {
+    float: left;
+}
+
+.banner_bottom_right .bbr_top {
+    width: 200px;
+    height: 160px;
+}
+
+.banner_bottom_right .bbr_bottom {
+    width: 200px;
+    height: 120px;
+    background: rgba(79, 87, 93, 1);
+}
+
+.bbr_bottom .bbr_bottom_t {
+    height: 76px;
+    line-height: 76px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bbr_bottom .bbr_bottom_b {
+    height: 44px;
+    width: 100%;
+}
+
+.bbr_bottom .bbr_bottom_b .bbr_bottom_b_l {
+    width: 99px;
+    height: 44px;
+    border-right: 1px solid #ffffff;
+}
+
+
+/*===================================公证书查验区域===============================*/
+.notarizationCheckBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    min-height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #4F575D;
+}
+
+.notarizationCheck {
+    min-height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.nt_left {
+    height: 1080px;
+    width: 226px;
+    float: left;
+}
+
+.nt_left_title {
+    height: 700px;
+    padding-top: 100px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(254, 66, 47, 1);
+}
+
+.nt_left_text {
+    height: 280px;
+    color: #A2A2A2;
+    font-size: 16px;
+}
+
+.nt_right {
+    width: 974px;
+    min-height: 1080px;
+    /*background: #ffffff;*/
+    float: left;
+}
+
+.nt_right_tab {
+    list-style: none;
+    width: 974px;
+    overflow: hidden;
+}
+
+.nt_right_tab li {
+    float: left;
+    width: 435px;
+    height: 250px;
+    color: #A6A6A6;
+    border-top: 2px solid #979C9E;
+    margin-top: 107px;
+    cursor: pointer;
+}
+
+.nt_right_tab li:nth-child(1) {
+    margin-right: 102px;
+}
+
+.tab_cur_title {
+    height: 130px;
+    line-height: 130px;
+    font-size: 70px;
+}
+
+.tab_cur_text {
+    height: 120px;
+    font-size: 30px;
+}
+
+.nt_right_tab .tab_cur {
+    color: #FE422F;
+    width: 435px;
+    height: 250px;
+    border-top: 2px solid #FE422F;
+}
+
+.nt_right_block {
+    display: none;
+}
+
+.nt_right .on {
+    display: block;
+}
+
+.nrb_main {
+    width: 834px;
+    min-height: 293px;
+    background: rgba(79, 87, 93, 1);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 4px;
+    padding: 80px 80px 0 60px;
+    position: relative;
+}
+
+.nrb_main .uploading {
+    width: 834px;
+    height: 293px;
+    padding: 80px 80px 0 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+.nrb_main .uploading2 {
+    width: 834px;
+    height: 293px;
+    padding: 80px 80px 0 60px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+}
+
+
+.nrb_main_top {
+    width: 924px;
+    height: 201px;
+    padding: 0 25px;
+    background: rgba(79, 87, 93, 1);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 4px;
+}
+
+.main_top_title {
+    height: 110px;
+    line-height: 110px;
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+}
+
+.main_top_title_s {
+    height: 48px;
+    line-height: 48px;
+    font-size: 20px;
+    color: #979C9E;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.main_top_title_s .downloadss {
+    color: #FE422F;
+    font-size: 20px;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+
+.nrb_main_content {
+    margin-top: 25px;
+    width: 924px;
+    padding: 0 25px;
+    background: rgba(79, 87, 93, 1);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 4px;
+    padding-bottom: 40px;
+}
+
+
+.hide {
+    display: none;
+}
+
+.uploading img {
+    cursor: pointer;
+}
+
+.fileName {
+    color: #FFFFFF;
+    font-size: 24px;
+}
+
+.file_hint {
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    height: 33px;
+    font-size: 24px;
+    width: 500px;
+    margin: 48px auto 24px;
+    cursor: pointer;
+}
+
+.file-hint2 {
+    height: 43px;
+    font-size: 18px;
+    color: rgba(233, 233, 233, 1);
+    width: 580px;
+    margin: 0 auto;
+    line-height: 43px;
+}
+
+.nrb_bottom {
+    margin-top: 40px;
+    height: 70px;
+    line-height: 70px;
+    width: 100%;
+    font-size: 16px;
+    color: #E9E9E9;
+    position: relative;
+}
+
+.nrb_button {
+    width: 201px;
+    height: 68px;
+    line-height: 68px;
+    background: rgba(79, 87, 93, 1);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.28);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: rgba(254, 66, 47, 1);
+    cursor: pointer;
+
+}
+
+.online {
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 50px;
+}
+
+.online .lf {
+    display: inline-block;
+    width: 132px;
+}
+
+.online input {
+    outline-color: invert;
+    outline-style: none;
+    outline-width: 0px;
+    border: none;
+    border-style: none;
+    text-shadow: none;
+    -webkit-appearance: none;
+    -webkit-user-select: text;
+    outline-color: transparent;
+    box-shadow: none;
+    background: #4F575D;
+    width: 683px;
+    line-height: 45px;
+    border-bottom: 1px solid #979C9E;
+    font-size: 24px;
+    color: #D5D5D5;
+}
+
+.online .online_input {
+    width: 770px;
+    font-size: 20px;
+    color: #979C9E;
+}
+
+.logInButton {
+    width: 376px;
+    height: 50px;
+    background: rgba(49, 49, 49, 1);
+}
+
+.fileMsg li {
+    display: inline-block;
+    width: 100%;
+    line-height: 50px;
+    border-bottom: 1px solid #979797;
+    position: relative;
+}
+
+.fileMsg li span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 24px;
+    color: #09CB78;
+}
+
+.fileMsg li span:nth-child(2) img {
+    margin-right: 10px;
+}
+
+.fileMsg2 li:nth-child(1) {
+    height: 97px;
+    width: 100%;
+    background: url("../img/shibai.png") no-repeat center top;
+}
+
+.fileMsg2 li:nth-child(2) {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+}
+.fileMsgs2 li:nth-child(1) {
+    height: 97px;
+    width: 100%;
+    background: url("../img/shibai.png") no-repeat center top;
+}
+
+.fileMsgs2 li:nth-child(2) {
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: center;
+}
+.checkImg {
+    width: 23px;
+    height: 23px;
+    background: rgba(9, 203, 120, 1);
+}
+.sys_status{
+    height: 110px;
+    line-height: 110px;
+   text-align: center;
+    color: #FE422F;
+}

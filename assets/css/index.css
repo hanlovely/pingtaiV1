@@ -1,0 +1,340 @@
+.headers .headers_text_s {
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    color: #E7172D;
+    font-size: 16px;
+    border-bottom:1px solid #E7172D ;
+}
+
+/*===================================banner区域===============================*/
+/*banner区域*/
+.main_box {
+
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/main_box.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+@media only screen and (min-width: 1680px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+.box_banner {
+    height: 645px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 435px;
+    /*border: 1px solid red;*/
+
+}
+
+.box_banner .box_banner_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.box_banner .box_banner_text {
+    width: 100%;
+    height: 239px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #E7172D;
+}
+
+.box_banner .box_banner_bottom {
+    width: 100%;
+    height: 280px;
+}
+
+.box_banner_bottom .banner_bottom_left {
+    height: 280px;
+    width: 1000px;
+    background: url(../img/banner_bottom_left.png) no-repeat;
+}
+
+.banner_bottom_left ul {
+    height: 106px;
+    padding: 87px 0;
+}
+
+.banner_bottom_left ul li {
+    height: 106px;
+    width: 332px;
+    float: left;
+    text-align: center;
+    color: #ffffff;
+}
+
+.banner_bottom_left ul li .li_number {
+    height: 72px;
+    line-height: 72px;
+    width: 100%;
+    color: #E7172D;
+    font-size: 40px;
+}
+
+.banner_bottom_left ul li .li_title {
+    height: 34px;
+    line-height: 34px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.banner_bottom_left ul li:nth-child(2) {
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+}
+
+.banner_bottom_left, .banner_bottom_right {
+    float: left;
+}
+
+.banner_bottom_right .bbr_top {
+    width: 200px;
+    height: 160px;
+}
+
+.banner_bottom_right .bbr_bottom {
+    width: 200px;
+    height: 120px;
+    background: rgba(79, 87, 93, 1);
+}
+
+.bbr_bottom .bbr_bottom_t {
+    height: 76px;
+    line-height: 76px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bbr_bottom .bbr_bottom_b {
+    height: 44px;
+    width: 100%;
+}
+
+.bbr_bottom .bbr_bottom_b .bbr_bottom_b_l {
+    width: 99px;
+    height: 44px;
+    border-right: 1px solid #ffffff;
+}
+/*===================================轮播图===============================*/
+.carouselBox{
+    overflow: hidden;
+    position: relative;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background:#4F575D;
+}
+.carousel{
+    height: 744px;
+    width: 1200px;
+    position: relative;
+    margin: 168px auto;
+    overflow: hidden;
+}
+.homepage_banner .swiper-slide {
+    height: 744px;
+    width: 1200px;
+    margin: 168px auto;
+    overflow: hidden;
+}
+
+.swiper-slide .li_top{
+    margin-bottom: 40px;
+    height: 352px;
+    width: 100%;
+}
+.li_top_l,.li_top_r,.li_top_l,.li_top_r{
+    float: left;
+    height: 240px;
+    width: 560px;
+    padding-top: 102px;
+    margin-left: 30px;
+    color: #ffffff;
+}
+.li_top .li_top_l{
+     background: url("../img/carousel5.png");
+ }
+.li_top .li_top_r{
+    background: url("../img/carousel6.png");
+}
+.li_bottom .li_top_l{
+    background: url("../img/carousel7.png");
+}
+.li_bottom .li_top_r{
+    background: url("../img/carousel8.png");
+}
+.swiper-slide2 .li_top .li_top_l{
+    background: url("../img/carousel.png");
+}
+.swiper-slide2 .li_top .li_top_r{
+    background: url("../img/carousel2.png");
+}
+.swiper-slide2 .li_bottom .li_top_l{
+    background: url("../img/carousel3.png");
+}
+.swiper-slide2 .li_bottom .li_top_r{
+    background: url("../img/carousel4.png");
+}
+.li_top_title{
+    height: 100px;
+    text-align: center;
+    font-size: 62px;
+}
+.li_top_text{
+    height: 45px;
+    text-align: center;
+    font-size: 32px;
+}
+/*===================================平台区域===============================*/
+/*银行平台*/
+.terraceBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/terraceBox.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+/*公证处平台*/
+.terraceBoxGzc {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/terraceBoxGzc.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+/*法院平台*/
+.terraceBoxFc {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/terraceBoxFc.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+.terrace {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.terrace_top {
+    height: 160px;
+    padding-top: 60px;
+    width: 100%;
+}
+
+.terrace_top_border {
+    height: 160px;
+    width: 599px;
+    border-right: 1px solid #ffffff;
+}
+
+/*银行*/
+.terrace_logo {
+    height: 190px;
+    width: 100%;
+    background: url(../img/yinhang.png) no-repeat 50% 50%;
+}
+
+.terrace_logo_gzc {
+    height: 190px;
+    width: 100%;
+    background: url(../img/gongzhengchu.png) no-repeat 50% 50%;
+}
+
+.terrace_logo_fy {
+    height: 190px;
+    width: 100%;
+    background: url(../img/fayuan.png) no-repeat 50% 50%;
+}
+
+.terrace_title {
+    width: 100%;
+    height: 100px;
+    font-size: 44px;
+    font-weight: 500;
+    line-height: 100px;
+}
+
+.terrace_title2 {
+    height: 100px;
+    padding-top: 140px;
+    font-size: 24px;
+
+}
+
+.terrace_text {
+    width: 954px;
+    height: 56px;
+    font-size: 20px;
+    margin: 0 auto;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.terrace_ul {
+    width: 100%;
+    height: 80px;
+}
+
+.terrace_ul li {
+    float: left;
+    height: 35px;
+    width: 192px;
+    margin: 0 24px;
+}

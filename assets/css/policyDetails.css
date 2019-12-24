@@ -1,0 +1,109 @@
+/*===================================banner区域===============================*/
+/*banner区域*/
+.main_box {
+
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 600px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/policyDetails_banner.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+@media only screen and (min-width: 1680px) {
+    .main_box {
+        height: 600px;
+        max-width: 1920px
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    .main_box {
+        height: 600px;
+        max-width: 1920px
+    }
+}
+
+.box_banner {
+    height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 260px;
+
+}
+
+.box_banner .box_banner_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.box_banner .box_banner_text {
+    width: 100%;
+    height: 126px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #E7172D;
+}
+
+/*===================================法律详情区域===============================*/
+.policyDetails{
+    margin: 120px auto 90px;
+    width: 1135px;
+    position: relative;
+    display: none;
+}
+.policyDetails_title{
+    height: 80px;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    color: #E7172D;
+}
+.pd_title{
+    height: 64px;
+    text-align: center;
+    color: #686868;
+    font-size: 24px;
+}
+.pd_p_text{
+   line-height: 34px;
+    width: 100%;
+    font-size: 18px;
+    color: #444444;
+    text-indent: 2rem;
+    padding-bottom: 30px;
+}
+.pd_p_text2{
+    line-height: 34px;
+    width: 100%;
+    font-size: 18px;
+    color: #444444;
+}
+.pd_p_text3{
+    line-height: 34px;
+    width: 100%;
+    font-size: 18px;
+    color: #444444;
+    text-indent: 2rem;
+}
+.getBack{
+    width: 100px;
+    height: 30px;
+    color: #999999;
+    position: absolute;
+    font-size: 18px;
+    left: 0;
+    top: 10px;
+    cursor: pointer;
+}

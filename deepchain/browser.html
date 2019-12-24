@@ -1,0 +1,1550 @@
+<!--深安链浏览器-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>网络赋强平台</title>
+    <link rel="stylesheet" href="layui/css/layui.css">
+    <link rel="stylesheet" href="../assets/css/common.css">
+    <link rel="stylesheet" href="../assets/css/browser.css">
+</head>
+<style>
+    .swiper-pagination {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 926px;
+        width: 2px;
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet {
+        height: 463px;
+        border-radius: 0;
+        width: 2px;
+        background: #989898;
+        display: block;
+    }
+
+    .swiper-pagination-clickable .swiper-pagination-bullet-active {
+        height: 463px;
+        width: 2px;
+        border-radius: 0;
+        background: rgba(227, 68, 53, 1);
+    }
+
+    .layui-table-view .layui-table td, .layui-table-view .layui-table th {
+        border-right: none;
+        padding: 16px;
+    }
+
+    .layui-table thead tr {
+        background: #FFFFFF;
+    }
+
+    .layui-table-page {
+        display: none;
+    }
+
+    .layui-table-hover {
+        background-color: #FFFFFF !important;
+    }
+
+    .layui-table, .layui-table-view {
+        margin: 0;
+    }
+</style>
+<body>
+<div class="main">
+
+    <!--=========================headers区域===============================-->
+    <div class="headers">
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">
+                        <div class="headers_logo">
+
+                        </div>
+                        <div class="headers_text_s">
+                            首页
+                        </div>
+                    </a>
+                </li>
+                <li class="headers_selection">
+                    <a>
+                        <div class="headers_text">
+                            深安链
+                        </div>
+                        <div class="headers_text2">
+                            Deepchain
+                        </div>
+                        <div class="headers_text3">
+                            01.
+                        </div>
+
+                    </a>
+                    <dl>
+                        <dd>
+                            <a href="deepchain.html">
+                                <div class="headers_text">
+                                    深安链
+                                </div>
+                                <div class="headers_text2">
+                                    Deepchain
+                                </div>
+                                <div class="headers_text3">
+                                    01.
+                                </div>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="browser.html">
+                                <div class="headers_text">
+                                    深安链浏览器
+                                </div>
+                                <div class="headers_text2">
+                                    Deepchain browser
+                                </div>
+                                <div class="headers_text3">
+                                    01.
+                                </div>
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="../solution/solution.html">
+                        <div class="headers_text">
+                            解决方案
+                        </div>
+                        <div class="headers_text2">
+                            The solution
+                        </div>
+                        <div class="headers_text3">
+                            02.
+                        </div>
+                    </a>
+                </li>
+
+                <li>
+                    <a>
+                        <div class="headers_text">
+                            政策导读
+                        </div>
+                        <div class="headers_text2">
+                            Policy guide
+                        </div>
+                        <div class="headers_text3">
+                            03.
+                        </div>
+                    </a>
+                    <dl>
+                        <dd>
+                            <a href="../news/policyList.html">
+                                <div class="headers_text">
+                                    政策导读
+                                </div>
+                                <div class="headers_text2">
+                                    Policy guide
+                                </div>
+                                <div class="headers_text3">
+                                    03.
+                                </div>
+                            </a>
+                        </dd>
+                        <dd>
+                            <a href="../news/indexNews.html">
+                                <div class="headers_text">
+                                    新闻资讯
+                                </div>
+                                <div class="headers_text2">
+                                    News andinformation
+                                </div>
+                                <div class="headers_text3">
+                                    03.
+                                </div>
+                            </a>
+                        </dd>
+                    </dl>
+                </li>
+                <li>
+                    <a href="../about.html">
+                        <div class="headers_text">
+                            关于我们
+                        </div>
+                        <div class="headers_text2">
+                            About us
+                        </div>
+                        <div class="headers_text3">
+                            04.
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="../inspection.html">
+                        <div class="headers_text">
+                            公证书查验
+                        </div>
+                        <div class="headers_text2">
+                            Notarial examination
+                        </div>
+                        <div class="headers_text3">
+                            05.
+                        </div>
+                    </a>
+                </li>
+            </ul>
+            <div class="nav_logon"><a href="../login.html" style="color: #FFFFFF">登录</a></div>
+        </nav>
+    </div>
+    <!--=========================banner区域===============================-->
+    <div class="main_box" id='main_box'>
+        <div class="box_banner">
+            <div class="box_banner_title">
+                Deepchain 上链数据概览
+            </div>
+            <div class="box_banner_text">
+                上链数据安全可信
+            </div>
+            <div class="box_banner_bottom">
+                <div class="banner_bottom_left">
+                    <p>现在加入DeepChain免部署安装费用，名额不多，赶快加入吧！</p>
+                    <div class="bbl_button">
+                        <a href="../about.html" style="color: #ffffff">立即加入</a>
+                    </div>
+                </div>
+                <div class="banner_bottom_right">
+                    <div class="bbr_top">
+
+                    </div>
+                    <div class="bbr_bottom">
+                        <div class="bbr_bottom_t">
+                            全网预览
+                        </div>
+                        <div class="bbr_bottom_b">
+                            <div class="bbr_bottom_b_l">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--=========================方案优势区域===============================-->
+    <div class="schemeBox">
+        <div class="scheme">
+            <ul class="scheme_left">
+                <li class="scheme_left_ul_symbol">
+                    “
+                </li>
+                <li class="scheme_left_ul_title">
+                    全网预览
+                </li>
+                <li class="scheme_left_ul_text">
+                    区块链ID：acr382 [版本：bd0fav88]
+                </li>
+            </ul>
+            <ul class="scheme_right">
+                <li>
+                    <div class="sr_title">
+                        <span>共</span>识节点
+                    </div>
+                    <div class="sr_text">
+                        8
+                    </div>
+                </li>
+                <li>
+                    <div class="sr_title">
+                        <span>区</span>块总数
+                    </div>
+                    <div class="sr_text blockNum">
+
+                    </div>
+                    <div id="blockNum" style="display: none">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="sr_title">
+                        <span>上</span>链事务
+                    </div>
+                    <div class="sr_text txNum">
+
+                    </div>
+                    <div id="txNum" style="display: none">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="sr_title">
+                        <span>用</span>户规模
+                    </div>
+                    <div class="sr_text userCount">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="sr_title">
+                        <span>区</span>块链公证书
+                    </div>
+                    <div class="sr_text notaryCount">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="sr_title">
+                        <span>网</span>络赋强上链数据
+                    </div>
+                    <div class="sr_text linkedDataCount">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="sr_title">
+                        <span>司</span>法辅助上链数据
+                    </div>
+                    <div class="sr_text judicialCount">
+
+                    </div>
+                    <div id="judicialCount" style="display: none">
+
+                    </div>
+
+                </li>
+                <li>
+                    <div class="sr_title">
+                        <span>存</span>证平台上链数据
+                    </div>
+                    <div class="sr_text czCount">
+
+                    </div>
+                    <div id="czCount" style="display: none">
+
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <!--=========================区块链折线图区域===============================-->
+    <div class="carouselBox">
+        <div class="carousel">
+            <div class="swiper-container banner">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide_data" style="margin-bottom: 42px">
+                            <div class="slide_data_titlle">
+                                <div class="sdt_l">
+                                    区块链公证书数量（24h）
+                                </div>
+                                <div class="sdt_r">
+                                    数据来源：北京中信、四川国力等公证处
+                                </div>
+
+                            </div>
+                            <div class="lineGraph" id="lineGraph" style="height: 368px;width: 1126px">
+
+                            </div>
+                        </div>
+                        <div class="slide_data">
+                            <div class="slide_data_titlle">
+                                <div class="sdt_l">
+                                    网络赋强上链数量（近一个月）
+                                </div>
+                                <div class="sdt_r">
+                                    数据来源：工商银行、太平金服等金融机构
+                                </div>
+
+                            </div>
+                            <div class="lineGraph" id="lineGraph2" style="height: 368px;width: 1126px">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide_data" style="margin-bottom: 42px">
+                            <div class="slide_data_titlle">
+                                <div class="sdt_l">
+                                    司法辅助上链数据（24h）
+                                </div>
+                                <div class="sdt_r">
+                                    数据来源：西城法院、石景山法院等司法部门
+                                </div>
+
+                            </div>
+                            <div class="lineGraph" id="lineGraph3" style="height: 368px;width: 1126px">
+
+                            </div>
+                        </div>
+                        <div class="slide_data">
+                            <div class="slide_data_titlle">
+                                <div class="sdt_l">
+                                    存证平台上链数据（24h）
+                                </div>
+                                <div class="sdt_r">
+                                    数据来源：体彩总局等机关企业
+                                </div>
+
+                            </div>
+                            <div class="lineGraph" id="lineGraph4" style="height: 368px;width: 1126px">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination">
+
+            </div>
+        </div>
+    </div>
+    <!--=========================深安链区域===============================-->
+    <div class="deepchainBox">
+        <div class="deepchain">
+            <div class="deepchain_search">
+                <div>
+                    <input id="parkName" placeholder="请输入区块哈希或者事务哈希进行搜索">
+                </div>
+                <div class="search_icon" id="clickimg">
+                    <img src="../assets/img/sousuo.png">
+                </div>
+            </div>
+            <div class="deepchainList">
+                <div class="deepchainList_l">
+                    <table class="layui-table" id="test3" lay-filter="test2" style="margin: 0;">
+                    </table>
+                    <img class="deepchainList_l_icon" src="../assets/img/hy.png" alt="">
+                </div>
+                <div class="deepchainList_r">
+                    <div id="quanbu2">
+                        查看全部 >
+                    </div>
+                    <table class="layui-table" id="test2" lay-filter="test2" style="margin: 0;">
+                    </table>
+                    <img class="deepchainList_r_l_icon" src="../assets/img/swzx.png" alt="">
+                </div>
+            </div>
+            <div class="deepchainList2">
+                <div id="quanbu">
+                    查看全部 >
+                </div>
+                <table class="layui-table" id="test" lay-filter="test" style="margin: 0;">
+                </table>
+
+                <img class="deepchainList2_icon" src="../assets/img/qkl.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!--=========================数据分析区域===============================-->
+    <div class="dataAnalysiseBox">
+        <div class="dataAnalysise">
+            <div class="dataAnalysise_title">
+                数据分析
+            </div>
+            <ul class="dataAnalysise_ul">
+                <li>
+                    <div class="dataAnalysise_ul_title">
+                        区块链公证书数量占比
+                    </div>
+                    <div id="dataChart" style="width: 250px; height: 250px;">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="dataAnalysise_ul_title">
+                        网络赋强上链数量占比
+                    </div>
+                    <div id="dataChart2" style="width: 250px; height: 250px;">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="dataAnalysise_ul_title">
+                        司法辅助上链数据占比
+                    </div>
+                    <div id="dataChart3" style="width: 250px; height: 250px;">
+
+                    </div>
+                </li>
+                <li>
+                    <div class="dataAnalysise_ul_title">
+                        存证平台上链数据占比
+                    </div>
+                    <div id="dataChart4" style="width: 250px; height: 250px;">
+
+                    </div>
+                </li>
+            </ul>
+            <div class="lineGraph" id="lineGraph5" style="height: 496px;width: 1200px">
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--=========================服务区域===============================-->
+    <div class="serviceBox">
+        <div class="service">
+            <ul class="service_ul">
+                <li class="service_ul_symbol">
+                    “
+                </li>
+                <li class="service_ul_title">
+                    网络赋强解决方案全景
+                </li>
+                <li class="service_ul_text">
+                    我们服务于：北京市西城区人民法院、北京市石景山区人民法院、北京市中信公证处、北京市国信公证处、天津市和信公证处、四川省成都市国力公证处、浙江省杭州市杭州互联网公证处、广东省广州市南粤公证处、黄河公证处、包头市天泽公证处
+                    、国家体育总局体育彩票管理中心、中国建设银行、中国工商银行、中原银行、太平保险集团。
+                </li>
+            </ul>
+            <div class="service_title">服务对象：</div>
+            <ul class="serviceList">
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+                <li>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--=========================footer区域===============================-->
+    <div class="footer">
+        <div class="footers">
+            <div class="footerLeft">
+                <div class="footerLeft_logo">
+
+                </div>
+                <div class="footerLeft_code">
+
+                </div>
+                <div class="footerLeft_title">
+                    版权所有 © 沈安未来科技有限公司 2019 保留一切权利 京ICP备19005678号-1
+                </div>
+            </div>
+            <div class="footerRight">
+                <ul class="footerRight_ul">
+                    <li>
+                        持续创新的“区块链公证+”智能公证服务平台第一品牌
+                    </li>
+                    <li>
+                        400-690-601
+                    </li>
+                    <li>
+                        <a href="../about.html">联系我们</a>
+                    </li>
+                </ul>
+                <ul class="footerRight_nav">
+                    <li>
+                        <a href="../index.html">首页</a>
+                    </li>
+                    <li>
+                        <a href="deepchain.html">深安链</a>
+                    </li>
+                    <li>
+                        <a href="../solution/solution.html">解决方案</a>
+                    </li>
+                    <li>
+                        <a href="../news/policyList.html">政策导读</a>
+                    </li>
+                    <li>
+                        <a href="../about.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="../inspection.html">公证书查验</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="layui/layui.js"></script>
+<script src="../assets/js/jquery-1.8.3.min.js"></script>
+<script src="../cfg/SawlCfg.js"></script>
+<script src="../assets/js/echarts.min.js"></script>
+<script src="../assets/js/swiper.min.js"></script>
+
+<script>
+    var platform = SawlCfg.platform[edition];
+    var deepchain_browser = SawlCfg.deepchain_browser[edition];
+
+    $(function () {
+        $(".main").on('scroll', function (e) {
+            if ($(".main").scrollTop() > 146) {
+                $(".headers").css("background", "rgba(0,0,0,0.8)");
+                $(".headers nav ul li dl").css("background", "rgba(0,0,0,0.8)");
+
+            } else if ($(".main").scrollTop() <= 1) {
+                $(".headers").css("background", "none");
+                $(".headers nav ul li dl").css("background", "none");
+            }
+        });
+        var mySwiper = new Swiper('.banner', {
+            direction: 'vertical',
+            loop: false,
+            autoplay: 4000,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            preventClicks: false,
+            noSwiping: true,
+            //					effect: 'flip',
+        });
+
+        $(".banner").on({
+            mouseover: function () {
+                //划入鼠标暂停
+                mySwiper.stopAutoplay()
+            },
+            mouseout: function () {
+                //划出鼠标开始轮播
+                mySwiper.startAutoplay()
+            }
+        });
+        $.ajax({
+            type: 'get',
+            url: platform + '/platform/sumnotarization/blockchainData',
+            success: function (data) {
+                //用户规模
+                $(".userCount").html(format(data.data.userCount));
+                //区块链公证书
+                $(".linkedDataCount").html(format(data.data.linkedDataCount));
+                //网络赋强上链数据
+                $(".notaryCount").html(format(data.data.notaryCount));
+            }
+        });
+        $.ajax({
+            type: 'get',
+            url: deepchain_browser + 'api/index',
+            success: function (data) {
+                //区块总数
+                $(".blockNum").html(format(data.blockNum));
+                $("#blockNum").html(data.blockNum);
+                //上链事务
+                $(".txNum").html(format(data.txNum));
+                $("#txNum").html(data.txNum);
+                getProportion();
+
+            }
+        });
+
+        // 绘制图表
+        var colorLine = ['rgb(108, 83, 86)', 'rgb(82, 90, 123)'];//颜色配置
+        //区块链公证书数量24小时
+        $.ajax({
+            type: 'get',
+            url: platform + '/platform/sumnotarization/sum24HCount',
+            async: true,
+            success: function (data) {
+                var data = data.data;
+                var lineGraph = echarts.init(document.getElementById('lineGraph'));
+                lineGraph.setOption({
+                    tooltip: {
+                        trigger: 'axis',
+                    },
+                    legend: {
+                        x: '5%',
+                        y: 'top',
+                        data: ['data']
+                    },
+                    grid: {
+                        top: '15%',
+                        left: '2%',
+                        right: '4%',
+                        bottom: '5%',
+                        containLabel: true
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            },
+                            boundaryGap: false,
+                            data: data.hour
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            show: true, //去掉Y轴分割线
+                            lineStyle: {
+                                color: "#ffffff"
+                            },
+                            axisLine: {
+                                show: false,
+                            },
+                            axisTick: {
+                                show: false
+                            },
+                            splitLine: {    //网格线
+                                lineStyle: {
+                                    type: 'dashed'    //设置网格线类型 dotted：虚线   solid:实线
+                                },
+                                show: false //隐藏或显示
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            }
+
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '',
+                            type: 'line',
+                            stack: '总量',
+                            symbol: 'circle',//折线点设置为实心点
+                            symbolSize: 1,   //折线点的大小
+                            itemStyle: {
+                                normal: {
+                                    color: "#FE422F",//折线点的颜色
+                                    lineStyle: {
+                                        color: "#FE422F"//折线的颜色
+                                    }
+                                }
+                            },
+                            areaStyle: {
+                                color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 0,
+                                    y2: 1,
+                                    colorStops: [{
+                                        offset: 0, color: colorLine[0] // 0% 处的颜色
+                                    }, {
+                                        offset: 1, color: colorLine[0] // 100% 处的颜色
+                                    }],
+                                    globalCoord: true // 缺省为 false
+                                },
+                                opacity: 1,
+                            },
+                            data: data.count
+                        },
+                    ]
+                });
+                // console.log(data)
+            },
+            error: function (error) {
+                alert(error.message)
+            }
+        });
+
+        //网络赋强上链数量(近一个月)数据
+        $.ajax({
+            type: 'get',
+            url: platform + '/platform/sumnotarization/sumMonthCount',
+            async: true,
+            success: function (data) {
+                var data = data.data;
+                var daysList = data.daysList.slice(-7);
+                var count = data.count.slice(-7);
+                var lineGraph2 = echarts.init(document.getElementById('lineGraph2'));
+                lineGraph2.setOption({
+                    tooltip: {
+                        trigger: 'axis',
+                    },
+                    legend: {
+                        x: '5%',
+                        y: 'top',
+                        data: ['data']
+                    },
+                    grid: {
+                        top: '15%',
+                        left: '2%',
+                        right: '4%',
+                        bottom: '5%',
+                        containLabel: true
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            },
+                            boundaryGap: false,
+                            data: data.daysList
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            show: true, //去掉Y轴分割线
+                            lineStyle: {
+                                color: "#ffffff"
+                            },
+                            axisLine: {
+                                show: false,
+                            },
+                            axisTick: {
+                                show: false
+                            },
+                            splitLine: {    //网格线
+                                lineStyle: {
+                                    type: 'dashed'    //设置网格线类型 dotted：虚线   solid:实线
+                                },
+                                show: false //隐藏或显示
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            }
+
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '',
+                            type: 'line',
+                            stack: '总量',
+                            symbol: 'circle',//折线点设置为实心点
+                            symbolSize: 1,   //折线点的大小
+                            itemStyle: {
+                                normal: {
+                                    color: "#FE422F",//折线点的颜色
+                                    lineStyle: {
+                                        color: "#FE422F"//折线的颜色
+                                    }
+                                }
+                            },
+                            areaStyle: {
+                                color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 0,
+                                    y2: 1,
+                                    colorStops: [{
+                                        offset: 0, color: colorLine[0] // 0% 处的颜色
+                                    }, {
+                                        offset: 1, color: colorLine[0] // 100% 处的颜色
+                                    }],
+                                    globalCoord: true // 缺省为 false
+                                },
+                                opacity: 1,
+                            },
+                            data: data.count
+                        },
+                    ]
+                });
+                // 数据分析折线图
+                var lineGraph5 = echarts.init(document.getElementById('lineGraph5'));
+                lineGraph5.setOption({
+                    tooltip: {
+                        trigger: 'axis',
+                    },
+                    legend: {
+                        x: '5%',
+                        y: 'top',
+                        data: ['data']
+                    },
+                    grid: {
+                        top: '15%',
+                        left: '2%',
+                        right: '4%',
+                        bottom: '5%',
+                        containLabel: true
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            },
+                            boundaryGap: false,
+                            data: daysList
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            show: true, //去掉Y轴分割线
+                            lineStyle: {
+                                color: "#ffffff"
+                            },
+                            axisLine: {
+                                show: false,
+                            },
+                            axisTick: {
+                                show: false
+                            },
+                            splitLine: {    //网格线
+                                lineStyle: {
+                                    type: 'dashed'    //设置网格线类型 dotted：虚线   solid:实线
+                                },
+                                show: false //隐藏或显示
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            }
+
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '',
+                            type: 'line',
+                            stack: '总量',
+                            symbol: 'circle',//折线点设置为实心点
+                            symbolSize: 1,   //折线点的大小
+                            itemStyle: {
+                                normal: {
+                                    color: "#ffffff",//折线点的颜色
+                                    lineStyle: {
+                                        color: "#5B66FC"//折线的颜色
+                                    }
+                                }
+                            },
+                            areaStyle: {
+                                color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 0,
+                                    y2: 1,
+                                    colorStops: [{
+                                        offset: 0, color: colorLine[1] // 0% 处的颜色
+                                    }, {
+                                        offset: 1, color: colorLine[1] // 100% 处的颜色
+                                    }],
+                                    globalCoord: true // 缺省为 false
+                                },
+                                opacity: 1,
+                            },
+                            data: count
+                        },
+                    ]
+                });
+            },
+            error: function (error) {
+                alert(error.message)
+            }
+        });
+
+        //司法辅助上链数据
+        $.ajax({
+            type: 'get',
+            url: 'https://test.deepsec.cn/ceedss_cdsn/cdsn/total/list.htm',
+            async: true,
+            success: function (data) {
+                var data = data;
+                if (data.count) {
+                    $(".judicialCount").html(format(data.count));
+                    $("#judicialCount").html(data.count);
+                    getProportion();
+                }
+                var lineGraph3 = echarts.init(document.getElementById('lineGraph3'));
+                lineGraph3.setOption({
+                    tooltip: {
+                        trigger: 'axis',
+                    },
+                    legend: {
+                        x: '5%',
+                        y: 'top',
+                        data: ['data']
+                    },
+                    grid: {
+                        top: '15%',
+                        left: '2%',
+                        right: '4%',
+                        bottom: '5%',
+                        containLabel: true
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            },
+                            boundaryGap: false,
+                            data: data.returnHours
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            show: true, //去掉Y轴分割线
+                            lineStyle: {
+                                color: "#ffffff"
+                            },
+                            axisLine: {
+                                show: false,
+                            },
+                            axisTick: {
+                                show: false
+                            },
+                            splitLine: {    //网格线
+                                lineStyle: {
+                                    type: 'dashed'    //设置网格线类型 dotted：虚线   solid:实线
+                                },
+                                show: false //隐藏或显示
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            }
+
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '',
+                            type: 'line',
+                            stack: '总量',
+                            symbol: 'circle',//折线点设置为实心点
+                            symbolSize: 1,   //折线点的大小
+                            itemStyle: {
+                                normal: {
+                                    color: "#FE422F",//折线点的颜色
+                                    lineStyle: {
+                                        color: "#FE422F"//折线的颜色
+                                    }
+                                }
+                            },
+                            areaStyle: {
+                                color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 0,
+                                    y2: 1,
+                                    colorStops: [{
+                                        offset: 0, color: colorLine[0] // 0% 处的颜色
+                                    }, {
+                                        offset: 1, color: colorLine[0] // 100% 处的颜色
+                                    }],
+                                    globalCoord: true // 缺省为 false
+                                },
+                                opacity: 1,
+                            },
+                            data: data.returndata
+                        },
+                    ]
+                });
+            },
+            error: function (error) {
+                alert(error.message)
+            }
+        });
+        //存证平台上链数据
+        $.ajax({
+            type: 'get',
+            url: 'http://47.92.240.163/zxbss_n/stgData/statistics.htm',
+            // data:{
+            //     "dateStr":"2019-06-19"
+            // },
+            // async: true,
+            success: function (data) {
+                var data = data;
+                $(".czCount").html(format(data.total));
+                $("#czCount").html(data.total);
+                getProportion();
+                var lineGraph4 = echarts.init(document.getElementById('lineGraph4'));
+                lineGraph4.setOption({
+                    tooltip: {
+                        trigger: 'axis',
+                    },
+                    legend: {
+                        x: '5%',
+                        y: 'top',
+                        data: ['data']
+                    },
+                    grid: {
+                        top: '15%',
+                        left: '2%',
+                        right: '4%',
+                        bottom: '5%',
+                        containLabel: true
+                    },
+                    xAxis: [
+                        {
+                            type: 'category',
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            },
+                            boundaryGap: false,
+                            data: data.hours
+                        }
+                    ],
+                    yAxis: [
+                        {
+                            type: 'value',
+                            show: true, //去掉Y轴分割线
+                            lineStyle: {
+                                color: "#ffffff"
+                            },
+                            axisLine: {
+                                show: false,
+                            },
+                            axisTick: {
+                                show: false
+                            },
+                            splitLine: {    //网格线
+                                lineStyle: {
+                                    type: 'dashed'    //设置网格线类型 dotted：虚线   solid:实线
+                                },
+                                show: false //隐藏或显示
+                            },
+                            axisLabel: {
+                                textStyle: {
+                                    color: '#FFFFFF'
+                                }
+                            }
+
+                        }
+                    ],
+                    series: [
+                        {
+                            name: '',
+                            type: 'line',
+                            stack: '总量',
+                            symbol: 'circle',//折线点设置为实心点
+                            symbolSize: 1,   //折线点的大小
+                            itemStyle: {
+                                normal: {
+                                    color: "#FE422F",//折线点的颜色
+                                    lineStyle: {
+                                        color: "#FE422F"//折线的颜色
+                                    }
+                                }
+                            },
+                            areaStyle: {
+                                color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 0,
+                                    y2: 1,
+                                    colorStops: [{
+                                        offset: 0, color: colorLine[0] // 0% 处的颜色
+                                    }, {
+                                        offset: 1, color: colorLine[0] // 100% 处的颜色
+                                    }],
+                                    globalCoord: true // 缺省为 false
+                                },
+                                opacity: 1,
+                            },
+                            data: data.counts
+                        },
+                    ]
+                });
+            },
+            error: function (error) {
+                alert(error.message)
+            }
+        });
+
+        function getProportion() {
+            var num = "";
+            var blockNum = "";
+            var txNum = "";
+            var judicialCount = "";
+            var czCount = "";
+            blockNum = Number($("#blockNum").html());
+            txNum = Number($("#txNum").html());
+            judicialCount = Number($("#judicialCount").html());
+            czCount = Number($("#czCount").html());
+            num = +blockNum + txNum + judicialCount + czCount;
+            blockNum = blockNum / num;
+            txNum = txNum / num;
+            judicialCount = judicialCount / num;
+            czCount = czCount / num;
+            var dataChart = echarts.init(document.getElementById("dataChart"));
+            var e = getFloat(blockNum*100, 2);
+            dataChart.setOption({
+                title: {
+                    show: true,
+                    text: e + '%',
+                    x: 'center',
+                    y: 'center',
+                    textStyle: {
+                        fontSize: '30',
+                        color: 'white',
+                        fontWeight: 'normal'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{d}%",
+                    show: false
+                },
+                legend: {
+                    orient: 'vertical',
+                    x: 'left',
+                    show: false
+                },
+                series:
+                    {
+                        name: '',
+                        type: 'pie',
+                        radius: ['65%', '85%'],
+                        avoidLabelOverlap: true,
+                        hoverAnimation: false,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            },
+                            emphasis: {
+                                show: false
+                            }
+                        },
+
+                        labelLine: {
+                            normal: {
+                                show: false
+                            },
+                        },
+                        data: [
+                            {value: e, name: '', itemStyle: {color: "#2FC25B"}},
+                            {value: 100 - e, name: '', itemStyle: {color: "rgb(48,69,83)"}}
+                        ]
+                    }
+
+            });
+            var dataChart2 = echarts.init(document.getElementById("dataChart2"));
+            var e = getFloat(txNum*100, 2);
+            dataChart2.setOption({
+                title: {
+                    show: true,
+                    text: e + '%',
+                    x: 'center',
+                    y: 'center',
+                    textStyle: {
+                        fontSize: '30',
+                        color: 'white',
+                        fontWeight: 'normal'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{d}%",
+                    show: false
+                },
+                legend: {
+                    orient: 'vertical',
+                    x: 'left',
+                    show: false
+                },
+                series:
+                    {
+                        name: '',
+                        type: 'pie',
+                        radius: ['65%', '85%'],
+                        avoidLabelOverlap: true,
+                        hoverAnimation: false,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            },
+                            emphasis: {
+                                show: false
+                            },
+                        },
+                        labelLine: {
+                            normal: {
+                                show: false
+                            }
+                        },
+                        data: [
+                            {value: e, name: '', itemStyle: {color: "#5C67FC"}},
+                            {value: 100 - e, name: '', itemStyle: {color: "rgb(48,69,83)"}}
+                        ]
+                    }
+
+            });
+            var dataChart3 = echarts.init(document.getElementById("dataChart3"));
+            var e = getFloat(judicialCount*100, 2);
+            dataChart3.setOption({
+                title: {
+                    show: true,
+                    text: e + '%',
+                    x: 'center',
+                    y: 'center',
+                    textStyle: {
+                        fontSize: '30',
+                        color: 'white',
+                        fontWeight: 'normal'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{d}%",
+                    show: false
+                },
+                legend: {
+                    orient: 'vertical',
+                    x: 'left',
+                    show: false
+                },
+                series:
+                    {
+                        name: '',
+                        type: 'pie',
+                        radius: ['65%', '85%'],
+                        avoidLabelOverlap: true,
+                        hoverAnimation: false,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            },
+                            emphasis: {
+                                show: false
+                            },
+                        },
+                        labelLine: {
+                            normal: {
+                                show: false
+                            }
+                        },
+                        data: [
+                            {value: e, name: '', itemStyle: {color: "#FCA35C"}},
+                            {value: 100 - e, name: '', itemStyle: {color: "rgb(48,69,83)"}}
+                        ]
+                    }
+
+            });
+            var dataChart4 = echarts.init(document.getElementById("dataChart4"));
+            var e = getFloat(czCount*100, 2);
+            dataChart4.setOption({
+                title: {
+                    show: true,
+                    text: e + '%',
+                    x: 'center',
+                    y: 'center',
+                    textStyle: {
+                        fontSize: '30',
+                        color: 'white',
+                        fontWeight: 'normal'
+                    }
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: "{d}%",
+                    show: false
+                },
+                legend: {
+                    orient: 'vertical',
+                    x: 'left',
+                    show: false
+                },
+                series:
+                    {
+                        name: '',
+                        type: 'pie',
+                        radius: ['65%', '85%'],
+                        avoidLabelOverlap: true,
+                        hoverAnimation: false,
+                        label: {
+                            normal: {
+                                show: false,
+                                position: 'center'
+                            },
+                            emphasis: {
+                                show: false
+                            },
+                        },
+                        labelLine: {
+                            normal: {
+                                show: false
+                            }
+                        },
+                        data: [
+                            {value: e, name: '', itemStyle: {color: "#5C67FC"}},
+                            {value: 100 - e, name: '', itemStyle: {color: "rgb(48,69,83)"}}
+                        ]
+                    }
+
+            });
+        }
+
+        // 保留2位小数
+        function getFloat(number, n) {
+            n = n ? parseInt(n) : 0;
+            if (n <= 0) {
+                return Math.round(number);
+            }
+            number = Math.round(number * Math.pow(10, n)) / Math.pow(10, n); //四舍五入
+            number = Number(number).toFixed(n); //补足位数
+            return number;
+        }
+
+    });
+
+    layui.use(['table', 'laytpl'], function () {
+        var $ = layui.$;
+        var table = layui.table;
+        var laytpl = layui.laytpl;
+        var deepchain_browser = SawlCfg.deepchain_browser[edition];
+        //========================== 最新区块===============================
+        table.render({
+            elem: '#test'
+            , url: deepchain_browser + "api/blocks/getlist"
+            , cols: [[
+                // {field: 'BlockHash', title: '最新区块', width: 206}
+                {field: 'BlockNum', title: '区块高度', width: 270}
+                , {field: 'TxCount', title: '事务数量', width: 270}
+                , {
+                    field: 'CreatedAt', title: '创建时间', width: 265, templet: function (d) {
+                        return layui.util.toDateString(d.CreatedAt, "yyyy-MM-dd HH:mm:ss")
+                    }
+                }
+                , {field: 'ChannelName', title: '通道名称', width: 265,}
+            ]]
+            , page: {
+                limit: 7
+            }
+            , response: {
+                // statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+            }
+            , parseData: function (res) { //将原始数据解析成 table 组件所规定的数据
+                return {
+                    "code": "0", //解析接口状态
+                    // "msg": res.message, //解析提示文本
+                    "count": res.blockList.length, //解析数据长度
+                    "data": res.blockList //解析数据列表
+                };
+            }
+        });
+        //========================== 最新事务===============================
+        table.render({
+            elem: '#test2'
+            , url: deepchain_browser + "api/transactions/getlist"
+            , cols: [[
+                {field: 'TxHash', title: '最新事务', width: 223}
+                , {field: 'ChaincodeName', title: '智能合约名称', width: 225}
+                , {
+                    field: 'Createdt', title: '上链时间', width: 225, templet: function (d) {
+                        return layui.util.toDateString(d.Createdt, "yyyy-MM-dd HH:mm:ss")
+                    }
+                }
+
+            ]]
+            , page: {
+                limit: 3
+            }
+            , response: {
+                // statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+            }
+            , parseData: function (res) { //将原始数据解析成 table 组件所规定的数据
+                return {
+                    "code": "0", //解析接口状态
+                    // "msg": res.message, //解析提示文本
+                    // "count": res.blockList.length, //解析数据长度
+                    "data": res.transactionList //解析数据列表
+                };
+            }
+        });
+        //========================== 智能合约===============================
+        table.render({
+            elem: '#test3'
+            , data: [
+                {
+                    "name": "网络赋强合约",
+                    "number": "45,686,571"
+                },
+                {
+                    "name": "区块链公证书合约",
+                    "number": "231,122,323"
+                },
+                {
+                    "name": "区块链存证合约",
+                    "number": "9,945,323"
+                },]
+            , cols: [[
+
+                {field: 'name', title: '智能合约名称', width: 163}
+                , {field: 'number', title: '交易规模 (24h)', width: 164}
+
+            ]]
+            , page: {
+                limit: 3
+            }
+            , response: {
+                // statusCode: 200 //重新规定成功的状态码为 200，table 组件默认为 0
+            }
+            , parseData: function (res) { //将原始数据解析成 table 组件所规定的数据
+                return {
+                    "code": "0", //解析接口状态
+                    // "msg": res.message, //解析提示文本
+                    // "count": res.blockList.length, //解析数据长度
+                    "data": res.transactionList //解析数据列表
+                };
+            }
+        });
+        $(document).on('click', '#quanbu', function () {//最近区块全部
+            window.location.href = "deepchainList.html";
+        });
+        $(document).on('click', '#quanbu2', function () {//最近事务全部
+            window.location.href = "deepchainList.html";
+        });
+        $(document).on('click', '#clickimg', function () {//搜索
+            let parkName = $('#parkName').val();//获取值
+            layui.jquery.ajax({
+                type: 'GET',
+                url: deepchain_browser + 'api/search/' + parkName,
+                success: function (pager) {
+                    if (pager.type == 0) {
+                        localStorage.removeItem("deepchain_channelName");//通道名称
+                        localStorage.removeItem("deepchain_blockNum");//区块高度
+                        localStorage.removeItem("deepchain_blockHash");
+                        localStorage.setItem("deepchain_searchblock", parkName);//搜索进入区块详情
+                        window.location.href = "blockDetails.html";
+                    } else if (pager.type == 1) {
+                        localStorage.setItem("deepchain_txHash", parkName);//搜索进入事务详情
+                        window.location.href = "affairDetails.html";
+                    } else {
+                        alert("查询结果不存在")
+                    }
+                },
+                error: function () {
+                    alert("查询结果不存在")
+                }
+            });
+        });
+
+    });
+
+    //千分位
+    function format(num) {
+        return (num + '').replace(/(\d{1,3})(?=(\d{3})+(?:$|\.))/g, '$1,');
+    }
+</script>
+
+</html>
+

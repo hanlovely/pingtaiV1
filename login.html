@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>区块链公证书_区块链电子数据存证_网络赋强公证_区块链公证电子合同_区块链证据固化_智能公证平台_增信网_深安未来</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./deepchain/layui/css/layui.css">
+</head>
+<body>
+<div class="login">
+    <div class="loginBox">
+        <div class="logo">
+
+        </div>
+        <div class="login_title">
+            欢迎登录网络赋强平台
+        </div>
+        <div class="login_main">
+            <ul class="tab">
+                <li class="tab_cur">
+                    <div class="tab_cur_logo">
+
+                    </div>
+                    <div class="tab_cur_text">
+                        银行
+                    </div>
+                </li>
+                <li>
+                    <div class="tab_cur_logo2">
+
+                    </div>
+                    <div class="tab_cur_text">
+                        公证处
+                    </div>
+                </li>
+                <li>
+                    <div class="tab_cur_logo3">
+
+                    </div>
+                    <div class="tab_cur_text">
+                        法院
+                    </div>
+                </li>
+            </ul>
+            <!--银行-->
+            <div class="tab_block on">
+                <div class="tab_box">
+                    <div class="tab_input">
+                        <input type="text" class="yhUserName" placeholder="请输入账号 / 邮箱">
+                    </div>
+                    <div class="tab_input">
+                        <input type="text" class="yhPassword" placeholder="请输入密码">
+                    </div>
+                    <div class="logInButton" id="yhlogInButton">
+                        登 录
+                    </div>
+                    <div class="tab_title">
+                        欢迎登录网络赋强平台 - 银行端
+                    </div>
+
+                </div>
+                <div class="tab_icon">
+                    <img src="./assets/img/denglu.png">
+                </div>
+                <div class="tab_password">
+                    <div class="tab_password_left">
+                        <span>忘记密码</span>
+                    </div>
+                    <div class="tab_password_right">
+                        <span>修改密码</span>
+                    </div>
+                </div>
+
+            </div>
+            <!--公证处-->
+            <div class="tab_block">
+                <div class="tab_box">
+                    <div class="tab_input">
+                        <select id="selectId">
+                            <option value="cs">请选择公证处</option>
+                            <option value="zx">中信公证处</option>
+                            <option value="hh">黄河公证处</option>
+                        </select>
+                    </div>
+                    <div class="tab_input">
+                        <select id="selectId2">
+                            <option value="cs">请选择业务</option>
+                            <!--                            <option value="test">工行网络赋强系统</option>-->
+                            <!--                            <option value="test2">建行网络赋强系统</option>-->
+                        </select>
+                    </div>
+                    <div class="tab_input">
+                        <input type="text" class="gzxUserName" value="bjzx_nans" placeholder="请输入账号 / 邮箱">
+                    </div>
+                    <div class="tab_input">
+                        <input type="text" class="gzxPassword" value="123456789" placeholder="请输入密码">
+                    </div>
+                    <div class="logInButton" id="gzclogInButton">
+                        登 录
+                    </div>
+                    <div class="tab_title">
+                        欢迎登录网络赋强平台 - 银行端
+                    </div>
+
+                </div>
+                <div class="tab_icon">
+                    <img src="./assets/img/denglu.png">
+                </div>
+                <div class="tab_password">
+                    <div class="tab_password_left">
+                        <span>忘记密码</span>
+                    </div>
+                    <div class="tab_password_right">
+                        <span>修改密码</span>
+                    </div>
+                </div>
+            </div>
+            <!--法院-->
+            <div class="tab_block">
+                <div class="tab_box">
+                    <div class="tab_input">
+                        <select disabled="true" style="cursor:no-drop">
+                            <option value="">请选择法院</option>
+                        </select>
+                    </div>
+                    <div class="tab_input">
+                        <input type="text" placeholder="请输入账号 / 邮箱" disabled="true" style="cursor:no-drop">
+                    </div>
+                    <div class="tab_input">
+                        <input type="text" placeholder="请输入密码" disabled="true" style="cursor:no-drop">
+                    </div>
+                    <div class="logInButton" style="cursor:no-drop">
+                        登 录
+                    </div>
+                    <div class="tab_title">
+                        欢迎登录网络赋强平台 - 银行端
+                    </div>
+
+                </div>
+                <div class="tab_icon">
+                    <img src="./assets/img/denglu.png">
+                </div>
+                <div class="tab_password">
+                    <div class="tab_password_left">
+                        <span>忘记密码</span>
+                    </div>
+                    <div class="tab_password_right">
+                        <span>修改密码</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+<script src="./assets/js/jquery-1.8.3.min.js"></script>
+<script src="./cfg/SawlCfg.js"></script>
+<script src="./assets/js/inspection.js"></script>
+<script>
+    $(function () {
+        //选项卡
+        $(".tab li").click(function () {
+            if ($(this).index() == 0) {
+                $('.tab_cur_logo').css('background', 'url("./assets/img/yinhang_xz.png") no-repeat center');
+                $('.tab_cur_logo2').css('background', 'url("./assets/img/gongzhengchu_wxz.png") no-repeat center');
+                $('.tab_cur_logo3').css('background', 'url("./assets/img/fayuan_wxz.png") no-repeat center');
+                $('.login').css('background', 'url("./assets/img/denglu_bg.png") no-repeat center');
+                $('.loginBox').css('background', 'url("./assets/img/loginBanner.png")');
+            } else if ($(this).index() == 1) {
+                $('.tab_cur_logo').css('background', 'url("./assets/img/yinhang_wxz.png") no-repeat center');
+                $('.tab_cur_logo2').css('background', 'url("./assets/img/gongzhengchu_xz.png") no-repeat center');
+                $('.tab_cur_logo3').css('background', 'url("./assets/img/fayuan_wxz.png") no-repeat center');
+                $('.login').css('background', 'url("./assets/img/denglu_bg2.png") no-repeat center');
+                $('.loginBox').css('background', 'url("./assets/img/loginBanner2.png")');
+            } else if ($(this).index() == 2) {
+                $('.tab_cur_logo').css('background', 'url("./assets/img/yinhang_wxz.png") no-repeat center');
+                $('.tab_cur_logo2').css('background', 'url("./assets/img/gongzhengchu_wxz.png") no-repeat center');
+                $('.tab_cur_logo3').css('background', 'url("./assets/img/fayuan_xzpng.png") no-repeat center');
+                $('.login').css('background', 'url("./assets/img/denglu_bg3.png") no-repeat center');
+                $('.loginBox').css('background', 'url("./assets/img/loginBanner3.png")');
+            }
+            $(".tab_block").hide().eq($(this).index()).show();
+            $(this).addClass("tab_cur").siblings().removeClass('tab_cur');
+        });
+
+        $("#logInButton").click(function () {
+            var userName = $(".userName").val();
+            var password = $(".password").val();
+
+        });
+        //银行登录
+        $("#yhlogInButton").click(function () {
+            var yhUserName = $(".yhUserName").val();
+            var yhPassword = $(".yhPassword").val();
+            if (yhUserName == "" || yhPassword == "") {
+                alert("账号或密码不能为空!请重新输入")
+
+            } else {
+                if (yhUserName !== "admin" || yhPassword !== "sawl123") {
+                    alert("账号或密码错误!请重新输入")
+                } else {
+                    window.open("http://datav.aliyuncs.com/share/4bd92b94fd274502ea7f72388adaa485");
+                    $(".yhUserName").val("");
+                    $(".yhPassword").val("");
+                    $(".gzxUserName").val("");
+                    $(".gzxPassword").val("");
+                    $("#selectId").val('cs');
+                    $("#selectId2").val('cs');
+                }
+            }
+        });
+
+        //公证处
+        $("#gzclogInButton").click(function () {
+            var gzxUserName = $(".gzxUserName").val();
+            var gzxPassword = $(".gzxPassword").val();
+            if ($('#selectId2').val() == "" || $('#selectId').val() == "") {
+                alert("公证处或业务不能为空!请重新输入")
+
+            }
+            if (gzxUserName == "" || gzxPassword == "") {
+                alert("账号或密码不能为空!请重新输入")
+
+            }
+            //工行登录
+            if ($('#selectId').val() == "zx" && $('#selectId2').val() == "gh") {
+                $.ajax({
+                    type: 'get',
+                    url: 'http://fqtest.deepsec.cn:9011/zxoeens_g/uniteLogin.htm',
+                    // async: true,
+                    data: {
+                        username: gzxUserName,
+                        password: gzxPassword
+                    },
+                    success: function (data) {
+                        if (data.success == true) {
+                            if (data.data.user_token) {
+                                window.open(window.open("http://fqtest.deepsec.cn:9011/zxoeens_g/#/login" + "?user_token" + data.data.user_token));
+                                $(".yhUserName").val("");
+                                $(".yhPassword").val("");
+                                $(".gzxUserName").val("");
+                                $(".gzxPassword").val("");
+
+                            }
+                        } else {
+                            alert(data.msg)
+
+                        }
+
+                    },
+                    error: function (error) {
+                        alert(error.msg)
+                    }
+                });
+                //建行登录
+            } else if ($('#selectId').val() == "zx" && $('#selectId2').val() == "jh") {
+                $.ajax({
+                    type: 'get',
+                    url: 'http://fqtest.deepsec.cn:9011/zxoeens_g/uniteLogin.htm',
+                    // async: true,
+                    data: {
+                        username: gzxUserName,
+                        password: gzxPassword
+                    },
+                    success: function (data) {
+                        console.log(data)
+                        if(data.data.user_token){
+                            // window.open( window.open("http://fqtest.deepsec.cn:9011/zxoeens_g/#/login"+"?user_token"+data.data.user_token))
+                        }
+
+                    },
+                    error: function (error) {
+                        alert(error.message)
+                    }
+                });
+                //黄河登录
+            } else if ($('#selectId').val() == "hh" && $('#selectId2').val() == "hh") {
+                // $.ajax({
+                //     type: 'get',
+                //     url: 'http://fqtest.deepsec.cn:9011/zxoeens_g/uniteLogin.htm',
+                //     // async: true,
+                //     data: {
+                //         username: gzxUserName,
+                //         password: gzxPassword
+                //     },
+                //     success: function (data) {
+                //         console.log(data)
+                //         if(data.data.user_token){
+                //             // window.open( window.open("http://fqtest.deepsec.cn:9011/zxoeens_g/#/login"+"?user_token"+data.data.user_token))
+                //         }
+                //
+                //     },
+                //     error: function (error) {
+                //         alert(error.message)
+                //     }
+                // });
+            }
+
+
+        });
+        // 下拉选择
+        $('#selectId').change(() => {
+            if ($('#selectId').val() == "zx") {
+                var html = '';
+                html += '<option value="">请选择业务</option>' +
+                    '<option value="gh">工行网络赋强系统</option>' +
+                    '<option value="jh">建行网络赋强系统</option>'
+                $('#selectId2').html(html);
+            }
+            if ($('#selectId').val() == "hh") {
+                var html = '';
+                html += '<option value="">请选择业务</option>' +
+                    '<option value="hh">黄河网络赋强系统</option>'
+                $('#selectId2').html(html);
+            }
+        });
+
+    });
+
+</script>
+</html>

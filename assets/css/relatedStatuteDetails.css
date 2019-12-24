@@ -1,0 +1,396 @@
+/*===================================初始化区域===============================*/
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: "PingFangSC-Regular", "PingFang SC", "PingFangSC", "Microsoft YaHei", Tahoma, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    font-family: "PingFangSC-Regular", "PingFang SC", "PingFangSC", "Microsoft YaHei", Tahoma, "Hiragino Sans GB", "WenQuanYi Micro Hei", sans-serif;
+
+}
+
+a {
+    color: #2C2C2C;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    min-width: 1200px;
+    overflow-y: auto;
+}
+
+/*===================================headers区域===============================*/
+.headers {
+    width: 100%;
+    height: 94px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    padding-top: 50px;
+    /*display: none;*/
+}
+
+.headers nav {
+    width: 1200px;
+    height: 94px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.headers nav ul {
+    width: 1200px;
+    height: 94px;
+    position: relative;
+    z-index: 10;
+    float: left;
+}
+
+.headers nav ul li {
+    width: 142px;
+    cursor: pointer;
+    list-style: none;
+    float: left;
+    font-weight: 400;
+    color: rgba(44, 44, 44, 1);
+    font-size: 14px;
+    margin-right: 40px;
+}
+
+.headers nav ul li:nth-child(1) {
+    width: 230px;
+}
+
+.headers nav ul li > a {
+    width: 100%;
+    height: 94px;
+    display: inline-block;
+    color: #CBCBCB;
+}
+
+.headers .headers_logo {
+    width: 230px;
+    height: 53px;
+    background: url("../img/snlogo.png") no-repeat;
+}
+
+.headers .headers_text_s {
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    /*color: #E7172D;*/
+    font-size: 16px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.headers .headers_text {
+    width: 100%;
+    height: 27px;
+    font-size: 16px;
+}
+
+.headers .headers_text2 {
+    width: 100%;
+    height: 34px;
+    font-size: 14px;
+}
+
+.headers .headers_text3 {
+    width: 100%;
+    height: 33px;
+    font-size: 14px;
+    border-bottom: 1px solid #CBCBCB;
+}
+
+.headers .headers_selection a {
+    color: #E7172D;
+}
+
+.headers .headers_selection a .headers_text3 {
+    border-bottom: 1px solid #E7172D;
+}
+
+.headers nav ul li dl {
+    display: none;
+    background: rgba(228, 30, 43, 1);
+    line-height: 40px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0px 1px 5px 0px rgba(223, 223, 223, 1);
+}
+.headers .headers_selection dl dd a{
+    color: #000000;
+}
+.headers nav ul li dl dd :hover {
+    color: #fff;
+    background: rgba(228, 30, 43, 1);
+}
+
+.headers nav ul li dl dd {
+    width: 100%;
+    display: inline-block;
+}
+
+.headers nav ul li dl dd a {
+    color: #000;
+    display: block;
+}
+
+.headers nav > ul > li:hover dl {
+    color: #fff;
+    background: #fff;
+    display: inline-block;
+    position: relative;
+}
+
+.headers nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.headers nav .nav_logon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background: rgba(79, 87, 93, 1);
+    color: #ffffff;
+    position: absolute;
+    border-radius: 100%;
+    top: 20px;
+    right: -30px;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+}
+
+.main_box {
+
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 600px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/policyDetails_banner.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+@media only screen and (min-width: 1680px) {
+    .main_box {
+        height: 600px;
+        max-width: 1920px
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    .main_box {
+        height: 600px;
+        max-width: 1920px
+    }
+}
+
+/*===================================banner区域===============================*/
+/*banner区域*/
+.box_banner {
+    height: 600px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 260px;
+
+}
+
+.box_banner .box_banner_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.box_banner .box_banner_text {
+    width: 100%;
+    height: 126px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #E7172D;
+}
+
+/*===================================法律法规区域===============================*/
+/*==========相关法规==========*/
+.relatedLawsBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+    padding-bottom: 120px;
+    background: #F3F4F5;
+}
+
+.relatedLaws {
+    /*height: 1080px;*/
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.relatedLaws_ul {
+    height: 200px;
+    width: 1200px;
+    padding-top: 120px;
+}
+
+.relatedLaws_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    font-weight:bold;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.relatedLaws_ul_title {
+    height: 100px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.relatedLawsList {
+
+}
+
+.relatedLawsList li {
+    height: 80px;
+    line-height: 80px;
+    color: #686868;
+    border-bottom: 2px solid #D3D3D3;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/*===================================footer区域===================================*/
+.footer {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 733px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #4F575D;
+}
+
+.footers {
+    width: 1200px;
+    height: 733px;
+    margin: 0 auto;
+}
+
+.footerLeft {
+    width: 770px;
+    height: 733px;
+    float: left;
+}
+
+.footerLeft_logo {
+    height: 30px;
+    width: 100%;
+    background: url("../img/snwllogo.png") no-repeat left center;
+    margin: 120px 0 40px 0;
+}
+
+.footerLeft_code {
+    height: 420px;
+    width: 100%;
+    background: url("../img/code.png") no-repeat left 0;
+}
+
+.footerLeft_title {
+    width: 100%;
+    height: 123px;
+    font-size: 16px;
+    color: #2F3437;
+}
+
+.footerRight {
+    width: 430px;
+    height: 733%;
+    float: left;
+}
+
+.footerRight_ul {
+    height: 300px;
+    width: 100%;
+}
+
+.footerRight_ul {
+    height: 300px;
+    width: 100%;
+    color: #ffffff;
+    margin-top: 120px;
+}
+
+.footerRight_ul li:nth-child(1) {
+    height: 52px;
+    font-size: 18px;
+}
+
+.footerRight_ul li:nth-child(2) {
+    height: 52px;
+    font-size: 26px;
+}
+
+.footerRight_ul li:nth-child(3) {
+    height: 160px;
+    font-size: 26px;
+}
+
+.footerRight_ul li:nth-child(3) a {
+    display: inline-block;
+    width: 140px;
+    height: 40px;
+    border-radius: 25px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    font-size: 18px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.footerRight_nav {
+    width: 100%;
+    height: 313px;
+    color: #ffffff;
+}
+
+.footerRight_nav li a {
+    color: #ffffff;
+}
+
+.footerRight_nav li a:hover {
+    color: dodgerblue;
+}
+
+.footerRight_nav li {
+    height: 40px;
+}
+
+.footerRight_nav li:nth-child(1) {
+    height: 60px;
+}

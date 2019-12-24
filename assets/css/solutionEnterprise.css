@@ -1,0 +1,389 @@
+
+/*===================================banner区域===============================*/
+/*banner区域*/
+.main_box {
+
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/solutionEnterprise.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+@media only screen and (min-width: 1680px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+.box_banner {
+    height: 645px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 435px;
+
+}
+
+
+.box_banner .box_banner_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.box_banner .box_banner_text {
+    width: 100%;
+    height: 239px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #E7172D;
+}
+
+.box_banner .box_banner_bottom {
+    width: 100%;
+    height: 280px;
+}
+
+.box_banner_bottom .banner_bottom_left {
+    height: 280px;
+    width: 900px;
+    background: url(../img/solutionEnterpriseMin.png) no-repeat;
+    padding: 0 50px;
+}
+
+.banner_bottom_left p {
+    min-height: 99px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 44px;
+    padding: 75px 45px;
+}
+
+.banner_bottom_left, .banner_bottom_right {
+    float: left;
+}
+
+.banner_bottom_right .bbr_top {
+    width: 200px;
+    height: 160px;
+}
+
+.banner_bottom_right .bbr_bottom {
+    width: 200px;
+    height: 120px;
+    background: rgba(79, 87, 93, 1);
+}
+
+.bbr_bottom .bbr_bottom_t {
+    height: 76px;
+    line-height: 76px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bbr_bottom .bbr_bottom_b {
+    height: 44px;
+    width: 100%;
+}
+
+.bbr_bottom .bbr_bottom_b .bbr_bottom_b_l {
+    width: 99px;
+    height: 44px;
+    border-right: 1px solid #ffffff;
+}
+
+
+/*===================================业务挑战区域===============================*/
+.businessBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #F3F4F5;
+}
+
+.business {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.business_ul {
+    height: 250px;
+    width: 1200px;
+    padding-top: 120px;
+}
+
+.business_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.business_ul_title {
+    height: 86px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.businessList li {
+    min-height: 118px;
+    border-bottom: 1px solid #D3D3D3;
+    margin-top: 30px;
+}
+
+.li_title {
+    height: 50px;
+    line-height: 56px;
+    background: url(../img/businessList_ico5.png) no-repeat left 4px;
+    padding-left: 66px;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(104, 104, 104, 1);
+
+}
+
+.businessList li:nth-child(2) .li_title {
+    background: url(../img/businessList_ico2.png) no-repeat left 4px;
+}
+
+.businessList li:nth-child(3) .li_title {
+    background: url(../img/businessList_ico7.png) no-repeat left 4px;
+}
+
+.li_text {
+    margin: 23px 0;
+    min-height: 50px;
+    line-height: 25px;
+    padding-left: 66px;
+    font-size: 18px;
+    color: rgba(104, 104, 104, 1);
+}
+
+/*===================================解决方案区域===============================*/
+.solutionBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #4F575D;
+}
+
+.solution {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.solution_ul {
+    height: 365px;
+    width: 1200px;
+    padding-top: 120px;
+}
+
+.solution_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.solution_ul_title {
+    height: 86px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.solutionList li {
+    float: left;
+    width: 500px;
+    text-align: center;
+}
+
+.solutionList li:nth-child(1) {
+    margin-right: 200px;
+}
+
+.sl_logo {
+    width: 500px;
+    height: 164px;
+    background: url(../img/gongzhengshu.png) no-repeat center;
+
+}
+
+.solutionList li:nth-child(2) .sl_logo {
+    width: 500px;
+    height: 164px;
+    background: url(../img/chuzhi.png) no-repeat center;
+
+}
+
+.sl_title {
+    height: 96px;
+    line-height: 96px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    font-size: 34px;
+}
+
+.sl_text {
+    min-height: 165px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+    line-height: 33px;
+}
+
+/*===================================业务挑战区域===============================*/
+.schemeBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #F3F4F5;
+}
+
+.scheme {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.scheme_left {
+    height: 940px;
+    width: 436px;
+    padding-top: 140px;
+    float: left;
+}
+
+.scheme_left_ul_symbol {
+    font-size: 160px;
+    height: 110px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.scheme_left_ul_title {
+    height: 112px;
+    font-size: 80px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.scheme_right {
+    height: 807px;
+    width: 764px;
+    padding-top: 273px;
+    float: left;
+}
+
+.scheme_right li {
+    width: 340px;
+    height: 300px;
+    float: left;
+    border-top: 1px solid #D2D2D2;
+    margin-right: 40px;
+    color: rgba(79, 87, 93, 1);
+}
+
+.sr_title {
+    margin: 24px 0;
+    height: 37px;
+    padding-left: 48px;
+    font-size: 26px;
+    background: url(../img/yxjdxyfx.png) no-repeat;
+    background-size: 29px 35px;
+    font-weight: 500;
+
+}
+.scheme_right li:nth-child(2) .sr_title{
+    background: url(../img/tsxl.png) no-repeat;
+}
+.scheme_right li:nth-child(3) .sr_title{
+    background: url(../img/jdcb.png) no-repeat;
+}
+.scheme_right li:nth-child(4) .sr_title{
+    background: url(../img/jqws.png) no-repeat;
+}
+.sr_text {
+    min-height: 75px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+
+/*===================================业务挑战区域===============================*/
+.loanBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #4F575D;
+}
+
+.loan {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.loan_ul {
+    height: 280px;
+    width: 1200px;
+    padding-top: 40px;
+}
+
+.loan_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.loan_ul_title {
+    height: 76px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.loan_bg {
+    width: 1200px;
+    height: 676px;
+}
+
+.loan_bg img {
+    width: 100%;
+    height: 100%;
+}

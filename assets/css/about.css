@@ -1,0 +1,531 @@
+/*===================================banner区域===============================*/
+/*banner区域*/
+.main_box {
+
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/about_banner.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+@media only screen and (min-width: 1680px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+.box_banner {
+    height: 645px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 435px;
+
+}
+
+
+.box_banner .box_banner_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.box_banner .box_banner_text {
+    width: 100%;
+    height: 239px;
+    font-weight: bold;
+    font-size: 34px;
+    color: #E7172D;
+}
+
+.box_banner .box_banner_bottom {
+    width: 100%;
+    height: 280px;
+}
+
+.box_banner_bottom .banner_bottom_left {
+    height: 280px;
+    width: 900px;
+    background: url(../img/about_banner_bottom_left.png) no-repeat;
+    padding: 0 50px;
+}
+
+.banner_bottom_left p:nth-child(1) {
+    height: 110px;
+    width: 100%;
+    line-height: 110px;
+    color: #E7172D;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.banner_bottom_left p:nth-child(2) {
+    height: 110px;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.banner_bottom_left, .banner_bottom_right {
+    float: left;
+}
+
+.banner_bottom_right .bbr_top {
+    width: 200px;
+    height: 160px;
+}
+
+.banner_bottom_right .bbr_bottom {
+    width: 200px;
+    height: 120px;
+    background: rgba(79, 87, 93, 1);
+}
+
+.bbr_bottom .bbr_bottom_t {
+    height: 76px;
+    line-height: 76px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bbr_bottom .bbr_bottom_b {
+    height: 44px;
+    width: 100%;
+}
+
+.bbr_bottom .bbr_bottom_b .bbr_bottom_b_l {
+    width: 99px;
+    height: 44px;
+    border-right: 1px solid #ffffff;
+}
+
+
+/*===================================平台区域===============================*/
+.terraceBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/about_banner2.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+.terrace {
+    height: 1080px;
+    width: 815px;
+    margin: 0 auto;
+    padding-left: 386px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.terrace_ul {
+    height: 960px;
+    width: 815px;
+    margin-top: 120px;
+    color: #ffffff;
+}
+
+.terrace_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    overflow: hidden;
+}
+
+.terrace_ul_title {
+    height: 205px;
+    font-size: 50px;
+    line-height: 70px;
+}
+
+.terrace_ul_main {
+    width: 711px;
+    height: 568px;
+    background: rgba(79, 87, 93, 1);
+    padding: 80px 52px 0 52px;
+    border-radius: 4px;
+    font-size: 24px;
+}
+
+.terrace_ul_main p {
+    line-height: 41px;
+}
+
+.terrace_ul_main p:nth-child(2) {
+    margin: 40px 0;
+}
+
+/*===================================使命区域===============================*/
+.missionBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.mission {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.mission_ul {
+    height: 840px;
+    width: 1200px;
+    padding-top: 240px;
+    color: #4F575D;
+}
+
+.mission_ul_symbol {
+    font-size: 160px;
+    height: 116px;
+    font-weight: bold;
+    color: rgba(232, 50, 70, 1);
+    overflow: hidden;
+}
+
+.mission_ul_title {
+    height: 112px;
+    font-size: 80px;
+    line-height: 112px;
+    font-weight: bold;
+}
+
+.mission_ul_text {
+    height: 105px;
+    font-size: 40px;
+}
+
+.mission_ul_main {
+    width: 1200px;
+    height: 221px;
+    font-size: 24px;
+    line-height: 50px;
+}
+
+/*===================================管理团队区域===============================*/
+.managementTeamBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #4F575D;
+}
+
+.managementTeam {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.managementTeam_ul {
+    height: 960px;
+    width: 1200px;
+    padding-top: 120px;
+    color: #ffffff;
+}
+
+.managementTeam_ul_symbol {
+    font-size: 120px;
+    height: 96px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.managementTeam_ul_title {
+    height: 140px;
+    font-size: 60px;
+    color: rgba(232, 50, 70, 1);
+    font-weight: bold;
+}
+
+.managementTeam_ul_text {
+    height: 105px;
+    font-size: 40px;
+    line-height: 105px;
+}
+
+.managementTeam_ul_main, .main_ul {
+    width: 1200px;
+    height: 726px;
+}
+
+.main_ul li {
+    float: left;
+    width: 264px;
+    height: 726px;
+}
+
+.main_ul li:nth-child(2) {
+    margin: 0 204px;
+}
+
+.main_ul .main_ul_img {
+    width: 264px;
+    height: 280px;
+    background: rgba(216, 216, 216, 1);
+    border-radius: 2px;
+}
+
+/*.main_ul .main_ul_img img{*/
+/*    width:100%;*/
+/*    height:100%;*/
+/*}*/
+.main_ul .main_ul_title {
+    height: 64px;
+    line-height: 64px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.main_ul .main_ul_name {
+    height: 78px;
+    font-weight: bold;
+    font-size: 34px;
+}
+
+
+/*===================================发展历程区域===============================*/
+.developmentHistoryBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/about_banner3.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+.developmentHistory {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.developmentHistory_ul {
+    height: 840px;
+    width: 1200px;
+    padding-top: 240px;
+    color: #FFFFFF;
+}
+
+.developmentHistory_ul_symbol {
+    font-size: 120px;
+    height: 96px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.developmentHistory_ul_title {
+    height: 140px;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+/*===================================联系我们区域===============================*/
+.contactUsBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.contactUs {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.contactUs_ul {
+    height: 938px;
+    width: 1200px;
+    padding-top: 142px;
+    color: #4F575D;
+}
+
+.contactUs_ul_symbol {
+    font-size: 120px;
+    height: 96px;
+    font-weight: bold;
+    color: rgba(232, 50, 70, 1);
+    overflow: hidden;
+}
+
+.contactUs_ul_title {
+    height: 140px;
+    font-size: 60px;
+    color: rgba(79, 87, 93, 1);
+    font-weight: bold;
+}
+
+.contactUs_ul_message {
+    height: 548px;
+}
+
+.message_left, .message_right {
+    float: left;
+}
+
+.message_left, .message_left ul {
+    width: 367px;
+    height: 548px;
+}
+
+.message_left li {
+    height: 108px;
+    line-height: 108px;
+    width: 100%;
+    font-size: 20px;
+    border-top: 1px solid #8C9195;
+}
+
+.message_right {
+    margin-left: 80px;
+}
+
+.message_right, .message_right ul {
+    width: 753px;
+    height: 548px;
+}
+
+.message_right li {
+    height: 108px;
+    line-height: 108px;
+    width: 100%;
+    font-size: 20px;
+    border-top: 1px solid #C8C8C8;
+}
+
+.message_right .message_input_box {
+    height: 100px;
+    padding: 30px 0;
+    line-height: 0;
+}
+.userBox,.textareaBox,.sendBox{
+    float: left;
+}
+.userBox input{
+    width:270px;
+    height:40px;
+    padding: 0 10px;
+    border-radius:2px;
+    border:1px solid rgba(217,217,217,1);
+}
+.userBox .userBox_user{
+    margin-bottom: 20px;
+}
+.textareaBox{
+    margin-left: 30px;
+}
+.textareaBox textarea{
+    resize:none;
+    width:335px;
+    height:80px;
+    padding: 10px;
+    border-radius:2px;
+    border:1px solid rgba(217,217,217,1);
+}
+.sendBox{
+    width: 60px;
+    padding-left: 14px;
+    padding-top: 72px;
+}
+.sendBox .sendButton{
+    width:60px;
+    height:28px;
+    line-height: 28px;
+    text-align: center;
+    background:rgba(232,50,70,1);
+    border-radius:2px;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.outreachBox{
+    height: 154px;
+    width: 100%;
+}
+.outreach_left,.outreach_right{
+    float: left;
+    height: 154px;
+    width: 600px;
+}
+.outreach_left_title{
+    height: 35px;
+    line-height: 35px;
+    font-size: 20px;
+    width: 100%;
+}
+.outreach_left_ul{
+    height: 28px;
+    padding: 45px 0;
+}
+.outreach_left_ul li{
+    height: 28px;
+    width: 28px;
+    float: left;
+    background: red;
+    margin-right: 40px;
+}
+.outreach_left_text{
+    height: 112px;
+    line-height: 112px;
+    font-size: 16px;
+}
+/*===================================地图区域===============================*/
+.mapBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 400px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #cccccc;
+    /*background: url(../img/about_banner3.png);*/
+    /*background-position: center 0;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    /*-webkit-background-size: cover; !* 兼容Webkit内核浏览器如Chrome和Safari *!*/
+    /*-o-background-size: cover; !* 兼容Opera *!*/
+    /*zoom: 1;*/
+}

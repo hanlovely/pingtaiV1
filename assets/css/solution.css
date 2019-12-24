@@ -1,0 +1,408 @@
+/*===================================banner区域===============================*/
+/*banner区域*/
+.main_box {
+
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: url(../img/solution_banner.png);
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover; /* 兼容Webkit内核浏览器如Chrome和Safari */
+    -o-background-size: cover; /* 兼容Opera */
+    zoom: 1;
+}
+
+@media only screen and (min-width: 1680px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+@media only screen and (min-width: 1860px) {
+    .main_box {
+        height: 1080px;
+        max-width: 1920px
+    }
+}
+
+.box_banner {
+    height: 645px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 435px;
+
+}
+
+
+.box_banner .box_banner_title {
+    width: 100%;
+    height: 126px;
+    line-height: 126px;
+    font-weight: bold;
+    font-size: 80px;
+    color: #ffffff;
+}
+
+.box_banner .box_banner_text {
+    width: 100%;
+    height: 239px;
+    font-weight: bold;
+    font-size: 60px;
+    color: #E7172D;
+}
+
+.box_banner .box_banner_bottom {
+    width: 100%;
+    height: 280px;
+}
+
+.box_banner_bottom .banner_bottom_left {
+    height: 280px;
+    width: 900px;
+    background: url(../img/solution_banner_bottom_left.png) no-repeat;
+    padding: 0 50px;
+}
+
+.banner_bottom_left p {
+    min-height: 99px;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    line-height: 33px;
+    padding: 75px 45px;
+}
+
+.banner_bottom_left, .banner_bottom_right {
+    float: left;
+}
+
+.banner_bottom_right .bbr_top {
+    width: 200px;
+    height: 160px;
+}
+
+.banner_bottom_right .bbr_bottom {
+    width: 200px;
+    height: 120px;
+    background: rgba(79, 87, 93, 1);
+}
+
+.bbr_bottom .bbr_bottom_t {
+    height: 76px;
+    line-height: 76px;
+    color: #FFFFFF;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bbr_bottom .bbr_bottom_b {
+    height: 44px;
+    width: 100%;
+}
+
+.bbr_bottom .bbr_bottom_b .bbr_bottom_b_l {
+    width: 99px;
+    height: 44px;
+    border-right: 1px solid #ffffff;
+}
+
+
+/*===================================解决方案全景区域===============================*/
+.panoramaBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #4F575D;
+}
+
+.panorama {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.panorama_ul {
+    height: 365px;
+    width: 1200px;
+    padding-top: 120px;
+}
+
+.panorama_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.panorama_ul_title {
+    height: 86px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.panorama_ul_text {
+    height: 145px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.panoramaList {
+    height: 594px;
+}
+
+.panoramaList_box {
+    float: left;
+    width: 338px;
+    height: 373px;
+    background: rgba(79, 87, 93, 1);
+    box-shadow: 0px 2px 11px 0px rgba(0, 0, 0, 0.28);
+    border-radius: 4px;
+    padding: 0 22px;
+    margin: 6px;
+    text-align: center;
+}
+
+.pl_box_title {
+    height: 118px;
+    line-height: 118px;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 1);
+}
+
+.pl_box_text {
+    height: 155px;
+    font-size: 24px;
+    line-height: 43px;
+    color: rgba(233, 233, 233, 1);
+}
+
+.pl_box_button {
+    width: 220px;
+    height: 60px;
+    line-height: 60px;
+    color: rgba(255, 255, 255, 1);
+    border-radius: 2px;
+    font-size: 24px;
+    margin: 0 auto;
+    border: 1px dashed rgba(136, 136, 136, 1);
+    background: rgba(100, 107, 112, 1);
+    cursor: pointer;
+    position: relative;
+}
+
+.box_button_angle {
+    width: 0;
+    height: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #ffffff;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+}
+
+
+/*===================================业务挑战区域===============================*/
+.businessBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #F3F4F5;
+}
+
+.business {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.business_ul {
+    height: 365px;
+    width: 1200px;
+    padding-top: 120px;
+}
+
+.business_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.business_ul_title {
+    height: 86px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.businessList {
+    height: 594px;
+}
+
+.businessList li {
+    height: 118px;
+    border-bottom: 1px solid #D3D3D3;
+    margin-top: 10px;
+}
+
+.li_title {
+    height: 50px;
+    line-height: 56px;
+    background: url(../img/businessList_ico.png) no-repeat left 4px;
+    padding-left: 66px;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(104, 104, 104, 1);
+
+}
+
+.businessList li:nth-child(2) .li_title {
+    background: url(../img/businessList_ico2.png) no-repeat left 4px;
+}
+
+.businessList li:nth-child(3) .li_title {
+    background: url(../img/businessList_ico3.png) no-repeat left 4px;
+}
+
+.businessList li:nth-child(4) .li_title {
+    background: url(../img/businessList_ico4.png) no-repeat left 4px;
+}
+
+.li_text {
+    height: 71px;
+    line-height: 71px;
+    padding-left: 66px;
+    font-size: 18px;
+    color: rgba(104, 104, 104, 1);
+}
+
+/*===================================解决方案区域===============================*/
+.solutionBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #4F575D;
+}
+
+.solution {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.solution_ul {
+    height: 365px;
+    width: 1200px;
+    padding-top: 120px;
+}
+
+.solution_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.solution_ul_title {
+    height: 86px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+
+.solutionList li {
+    float: left;
+    width: 500px;
+    text-align: center;
+}
+.solutionList li:nth-child(1){
+    margin-right: 200px;
+}
+.sl_logo{
+    width: 500px;
+    height: 164px;
+    background: url(../img/gongzhengshu.png) no-repeat center;
+
+}
+.solutionList li:nth-child(2) .sl_logo{
+    width: 500px;
+    height: 164px;
+    background: url(../img/chuzhi.png) no-repeat center;
+
+}
+.sl_title{
+    height: 96px;
+    line-height: 96px;
+    font-weight:500;
+    color:rgba(255,255,255,1);
+    font-size:34px;
+}
+.sl_text{
+    min-height:165px;
+    font-size:24px;
+    color:rgba(255,255,255,1);
+    line-height:33px;
+}
+
+/*===================================业务挑战区域===============================*/
+.challengeBox {
+    overflow: hidden;
+    position: relative;
+    background-size: 100% 100%;
+    height: 1080px;
+    max-width: 1920px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+
+.challenge {
+    height: 1080px;
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.challenge_ul {
+    height: 365px;
+    width: 1200px;
+    padding-top: 120px;
+}
+
+.challenge_ul_symbol {
+    font-size: 160px;
+    height: 107px;
+    color: rgba(231, 23, 45, 1);
+    overflow: hidden;
+}
+
+.challenge_ul_title {
+    height: 86px;
+    font-size: 50px;
+    color: rgba(231, 23, 45, 1);
+}
+.challenge_bg{
+    width: 1200px;
+    height: 482px;
+}
+.challenge_bg img{
+    width: 100%;
+    height: 100%;
+}
