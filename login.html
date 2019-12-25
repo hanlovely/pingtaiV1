@@ -92,10 +92,10 @@
             </select>
           </div>
           <div class="tab_input">
-            <input type="text" class="gzxUserName" value="bjzx_nans" placeholder="请输入账号 / 邮箱">
+            <input type="text" class="gzxUserName"  placeholder="请输入账号 / 邮箱">
           </div>
           <div class="tab_input">
-            <input type="text" class="gzxPassword" value="123456789" placeholder="请输入密码">
+            <input type="text" class="gzxPassword"  placeholder="请输入密码">
           </div>
           <div class="logInButton" id="gzclogInButton">
             登 录
@@ -219,11 +219,12 @@
       var gzxPassword = $(".gzxPassword").val();
       console.log($('#selectId2').val())
       if ($('#selectId2').val() == "cs" || $('#selectId').val() == "cs") {
-        alert("公证处或业务不能为空!请重新输入")
-
+        alert("公证处或业务不能为空!请重新输入");
+        return;
       }
       if (gzxUserName == "" || gzxPassword == "") {
-        alert("账号或密码不能为空!请重新输入")
+        alert("账号或密码不能为空!请重新输入");
+        return;
 
       }
       //工行登录
@@ -270,7 +271,6 @@
             password: gzxPassword
           },
           success: function (data) {
-            console.log(data)
             if (data.data.user_token) {
               window.open(window.open("http://fqtest.deepsec.cn:10201/zxoeens_n/#/login" + "?user_token" + data.data.user_token))
               $(".yhUserName").val("");
@@ -288,25 +288,31 @@
         });
         //黄河登录
       } else if ($('#selectId').val() == "hh" && $('#selectId2').val() == "hh") {
-        // $.ajax({
-        //     type: 'get',
-        //     url: 'http://fqtest.deepsec.cn:9011/zxoeens_g/uniteLogin.htm',
-        //     // async: true,
-        //     data: {
-        //         username: gzxUserName,
-        //         password: gzxPassword
-        //     },
-        //     success: function (data) {
-        //         console.log(data)
-        //         if(data.data.user_token){
-        //             // window.open( window.open("http://fqtest.deepsec.cn:9011/zxoeens_g/#/login"+"?user_token"+data.data.user_token))
-        //         }
-        //
-        //     },
-        //     error: function (error) {
-        //         alert(error.message)
-        //     }
-        // });
+        $.ajax({
+          type: 'get',
+          url: 'http://39.100.230.216/zxoeens_n/uniteLogin.htm',
+          // async: true,
+          data: {
+            username: gzxUserName,
+            password: gzxPassword
+          },
+          success: function (data) {
+            console.log(data)
+            if (data.data.user_token) {
+              window.open(window.open("http://39.100.230.216/zxoeens_n/#/login" + "?user_token" + data.data.user_token))
+              $(".yhUserName").val("");
+              $(".yhPassword").val("");
+              $(".gzxUserName").val("");
+              $(".gzxPassword").val("");
+              $("#selectId").val('cs');
+              $("#selectId2").val('cs');
+            }
+
+          },
+          error: function (error) {
+            alert(error.message)
+          }
+        });
       }
 
 
