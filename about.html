@@ -411,14 +411,14 @@
 <script>
     var getUrl = SawlCfg.zxwww[edition];
     $(".main").on('scroll', function(e) {
-        if ($(".main").scrollTop() > 146) {
-            $(".headers").css("background","rgba(0,0,0,0.8)");
-            $(".headers nav ul li dl").css("background","rgba(0,0,0,0.8)");
+      if ($(".main").scrollTop() > 146) {
+        $(".headers").css("background","rgba(0,0,0,0.8)");
+        $(".headers nav ul li dl").css("background","rgba(0,0,0,0.8)");
 
-        } else if($(".main").scrollTop() <=1){
-            $(".headers").css("background","none");
-            $(".headers nav ul li dl").css("background","none");
-        }
+      } else if($(".main").scrollTop() <=1){
+        $(".headers").css("background","none");
+        $(".headers nav ul li dl").css("background","none");
+      }
     });
     function sendButton() {
         var customerName = document.querySelector(".customerName").value;
