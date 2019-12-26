@@ -164,6 +164,7 @@
     var getUrlJh = SawlCfg.jhlogin[edition];
     var getUrlGh = SawlCfg.ghlogin[edition];
     var getUrlHh = SawlCfg.hhlogin[edition];
+    var datav_url = SawlCfg.datav_url[edition];
     //选项卡
     $(".tab li").click(function () {
       if ($(this).index() == 0) {
@@ -205,7 +206,7 @@
         if (yhUserName !== "admin" || yhPassword !== "sawl123") {
           alert("账号或密码错误!请重新输入")
         } else {
-          window.open("http://datav.aliyuncs.com/share/4bd92b94fd274502ea7f72388adaa485");
+          window.open(datav_url);
           $(".yhUserName").val("");
           $(".yhPassword").val("");
           $(".gzxUserName").val("");
