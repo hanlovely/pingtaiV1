@@ -271,12 +271,15 @@
             }
         });
         if(blockHash!=null){
+          console.log(1)
             dataUrl =deepchain_browser+"api/block/getinfobyhash/" + blockHash;
             //区块详情跳转事务详情
         }else if (blockNum != null && channelName != null) {
+          console.log(2)
             //区块列表详情接口
             dataUrl = deepchain_browser + "api/block/getinfo/" + blockNum + "/" + channelName;
         } else {
+          console.log(3)
             //搜索接口
             dataUrl = deepchain_browser + "api/search/" + searchblock;
         }
@@ -307,7 +310,14 @@
             type: 'get',
             url: dataUrl,
             success: function (pager) {
+              console.log(pager)
+
+              if(pager.blockInfo){
                 var data = pager.blockInfo;
+              }
+              if(pager.Info){
+                var data = pager.Info;
+              }
                 txhashlist = pager.txhashlist;
                 preBlockHash = data.PreBlockHash;
                 var view = document.getElementById('personInfo2');

@@ -24,13 +24,6 @@
             // P  : 'https://demo.zengxin.com.cn',
             R  : 'http://39.100.144.0:9060',
         },
-        platform : {
-            name : '网络赋强平台',
-            D  : 'http://deepchain.deepsec.cn:8088/api/',
-            T  : 'http://deepchain.deepsec.cn:8088/api/',
-            P  : 'http://deepchain.deepsec.cn:8088/api/',
-            R  : 'http://39.100.144.0:9060',
-        },
         deepchain : {
             name : '深安链API接口地址',
             D  : 'http://deepchain.deepsec.cn:8088/api/',
@@ -66,22 +59,6 @@
             P  : 'http://demo.zengxin.com.cn/bjzx_ceedssms/',
             R  : 'https://www.zengxin.com.cn/bjzx_ceedssms/',
         },
-        cenans_n : {
-            name : '赋强N端后台接口',
-            D  : 'http://localhost:8080/bjzx_nans20/',
-            T  : 'https://test.deepsec.cn/bjzx_nans20/',
-            P  : 'http://demo.zengxin.com.cn/bjzx_nans20/',
-            R  : 'https://www.zengxin.com.cn/bjzx_nans20/',
-        },
-        oa : {
-            name : '自建OA系统，运维平台',
-            D  : 'http://localhost:8080/oa/',
-            T  : 'https://test.deepsec.cn/oa/',
-            P  : 'http://demo.zengxin.com.cn/oa/',
-            R  : 'https://www.zengxin.com.cn/oa/',
-        }
-
-
     };
 
     /**

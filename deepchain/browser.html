@@ -1511,7 +1511,7 @@
             window.location.href = "deepchainList.html";
         });
         $(document).on('click', '#quanbu2', function () {//最近事务全部
-            window.location.href = "deepchainList.html";
+            window.location.href = "deepchainList2.html";
         });
         $(document).on('click', '#clickimg', function () {//搜索
             let parkName = $('#parkName').val();//获取值
@@ -1519,6 +1519,7 @@
                 type: 'GET',
                 url: deepchain_browser + 'api/search/' + parkName,
                 success: function (pager) {
+                  console.log(pager.type)
                     if (pager.type == 0) {
                         localStorage.removeItem("deepchain_channelName");//通道名称
                         localStorage.removeItem("deepchain_blockNum");//区块高度

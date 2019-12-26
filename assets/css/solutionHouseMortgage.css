@@ -320,13 +320,13 @@
     height: 37px;
     padding-left: 48px;
     font-size: 26px;
-    background: url(../img/yxjdxyfx.png) no-repeat;
+    background: url(../img/businessList_ico6.png) no-repeat;
     background-size: 29px 35px;
     font-weight: 500;
 
 }
 .scheme_right li:nth-child(2) .sr_title{
-    background: url(../img/tsxl.png) no-repeat;
+    background: url(../img/businessList_ico11.png) no-repeat;
 }
 .scheme_right li:nth-child(3) .sr_title{
     background: url(../img/jdcb.png) no-repeat;
