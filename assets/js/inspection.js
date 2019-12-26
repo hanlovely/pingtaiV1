@@ -47,7 +47,7 @@ function dragdrop() {
         e.preventDefault();
         //拖拽进来样式改变
         $(".fileMsg").show();
-        $(".uploading").addClass("hide");
+        // $(".uploading").addClass("hide");
     }, false);
     dragDrop.addEventListener("drop", function (e) {
         e.stopPropagation();
