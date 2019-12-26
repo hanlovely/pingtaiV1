@@ -161,6 +161,9 @@
 <script src="./assets/js/inspection.js"></script>
 <script>
   $(function () {
+    var getUrlJh = SawlCfg.jhlogin[edition];
+    var getUrlGh = SawlCfg.ghlogin[edition];
+    var getUrlHh = SawlCfg.hhlogin[edition];
     //选项卡
     $(".tab li").click(function () {
       if ($(this).index() == 0) {
@@ -231,7 +234,7 @@
       if ($('#selectId').val() == "zx" && $('#selectId2').val() == "gh") {
         $.ajax({
           type: 'get',
-          url: 'http://fqtest.deepsec.cn:9011/zxoeens_g/uniteLogin.htm',
+          url: getUrlGh+'/zxoeens_g/uniteLogin.htm',//正式环境
           // async: true,
           data: {
             username: gzxUserName,
@@ -240,7 +243,7 @@
           success: function (data) {
             if (data.success == true) {
               if (data.data.user_token) {
-                window.open(window.open("http://fqtest.deepsec.cn:9011/zxoeens_g/#/login" + "?user_token" + data.data.user_token));
+                window.open(window.open(getUrlGh+"/zxoeens_g/#/login" + "?user_token" + data.data.user_token));//正式环境
                 $(".yhUserName").val("");
                 $(".yhPassword").val("");
                 $(".gzxUserName").val("");
@@ -264,22 +267,27 @@
         console.log("建行登录")
         $.ajax({
           type: 'get',
-          url: 'http://fqtest.deepsec.cn:10201/zxoeens_n/uniteLogin.htm',
+          url: getUrlJh+'/zxoeens_n/uniteLogin.htm',
           // async: true,
           data: {
             username: gzxUserName,
             password: gzxPassword
           },
           success: function (data) {
-            if (data.data.user_token) {
-              window.open(window.open("http://fqtest.deepsec.cn:10201/zxoeens_n/#/login" + "?user_token" + data.data.user_token))
-              $(".yhUserName").val("");
-              $(".yhPassword").val("");
-              $(".gzxUserName").val("");
-              $(".gzxPassword").val("");
-              $("#selectId").val('cs');
-              $("#selectId2").val('cs');
+            if (data.success == true){
+              if (data.data.user_token) {
+                window.open(window.open(getUrlJh+"/zxoeens_n/#/login" + "?user_token" + data.data.user_token));//测试环境
+                $(".yhUserName").val("");
+                $(".yhPassword").val("");
+                $(".gzxUserName").val("");
+                $(".gzxPassword").val("");
+                $("#selectId").val('cs');
+                $("#selectId2").val('cs');
+              }
+            }else {
+              alert(data.msg)
             }
+
 
           },
           error: function (error) {
@@ -290,7 +298,7 @@
       } else if ($('#selectId').val() == "hh" && $('#selectId2').val() == "hh") {
         $.ajax({
           type: 'get',
-          url: 'http://39.100.230.216/zxoeens_n/uniteLogin.htm',
+          url: getUrlHh+'/zxoeens_n/uniteLogin.htm',
           // async: true,
           data: {
             username: gzxUserName,
@@ -299,7 +307,7 @@
           success: function (data) {
             console.log(data)
             if (data.data.user_token) {
-              window.open(window.open("http://39.100.230.216/zxoeens_n/#/login" + "?user_token" + data.data.user_token))
+              window.open(window.open(getUrlHh+"/zxoeens_n/#/login" + "?user_token" + data.data.user_token));
               $(".yhUserName").val("");
               $(".yhPassword").val("");
               $(".gzxUserName").val("");
