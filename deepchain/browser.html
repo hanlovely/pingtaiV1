@@ -584,7 +584,8 @@
 <script>
     var platform = SawlCfg.platform[edition];
     var deepchain_browser = SawlCfg.deepchain_browser[edition];
-
+    var judicialData = SawlCfg.judicialData[edition];
+    var eeData = SawlCfg.eeData[edition];
     $(function () {
         $(".main").on('scroll', function (e) {
             if ($(".main").scrollTop() > 146) {
@@ -952,7 +953,7 @@
         //司法辅助上链数据
         $.ajax({
             type: 'get',
-            url: 'https://test.deepsec.cn/ceedss_cdsn/cdsn/total/list.htm',
+            url: judicialData+'/ceedss_cdsn/cdsn/total/list.htm',
             async: true,
             success: function (data) {
                 var data = data;
@@ -1060,7 +1061,7 @@
         //存证平台上链数据
         $.ajax({
             type: 'get',
-            url: 'http://47.92.240.163/zxbss_n/stgData/statistics.htm',
+            url: eeData+'/zxbss_n/stgData/statistics.htm',
             // data:{
             //     "dateStr":"2019-06-19"
             // },
