@@ -61,6 +61,11 @@
       T: 'https://api-entzn.zengxin.com.cn/api-entzn/',
       R: 'https://api-entzn.zengxin.com.cn/api-entzn/',
     },
+    datav_url: {
+      name: 'datav',
+      T: 'http://datav.aliyuncs.com/share/4bd92b94fd274502ea7f72388adaa485',
+      R: 'http://datav.aliyuncs.com/share/8cdb76179f7957267c81785f1af9706c',
+    },
 
   };
 
